@@ -35,6 +35,7 @@ function getGuideSidebar() {
       text: '每日学习',
       children: [
         { text: 'goal', link: '/record/goal' },
+        { text: '模板', link: '/record/template' },
         { text: '0427', link: '/record/0427' },
       ]
     },

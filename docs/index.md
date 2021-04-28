@@ -1,5 +1,6 @@
-# Hello, Vitepress
+# 每日学习记录
 
+> 这是一个记录每日学习的仓库
 
 - 学习参考：[俊劫的每日学习打卡](https://alexwjj.github.io/)
 - [俊劫的掘金](https://juejin.cn/user/3386151545609837/posts)
