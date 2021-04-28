@@ -6,13 +6,12 @@ module.exports = {
   themeConfig: {
     repo: 'Jsmond2016/study-everyday',
     docsDir: 'docs',
-
     editLinks: true,
     editLinkText: '编辑本页',
     lastUpdated: '最后更新时间',
 
     nav: [
-      { text: '首页', link: '/', activeMatch: '^/$|^/base|advance/' },
+      { text: '首页', link: '/' },
       // {
       //   text: '归档',
       //   link: '/config/basics',

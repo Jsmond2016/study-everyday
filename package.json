@@ -2,6 +2,7 @@
   "name": "study-everyday",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://jsmond2016.github.io/study-everyday",
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev docs",
