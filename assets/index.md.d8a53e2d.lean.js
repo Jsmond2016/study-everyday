@@ -1,1 +1,0 @@
-import{o as e,c as r,a as t}from"./app.5bd213e1.js";const a='{"title":"Hello, Vitepress","description":"","frontmatter":{},"relativePath":"index.md","lastUpdated":1619613047531}',l={},n=t('',4);l.render=function(t,a,l,o,i,s){return e(),r("div",null,[n])};export default l;export{a as __pageData};
