@@ -36,7 +36,12 @@ function getGuideSidebar() {
       children: [
         { text: 'goal', link: '/record/goal' },
         { text: '模板', link: '/record/template' },
-        { text: '0427', link: '/record/0427' },
+      ]
+    },
+    {
+      text: '5月',
+      children: [
+        { text: '0506', link: '/record/05/0506' }
       ]
     },
   ]
