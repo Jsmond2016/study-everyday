@@ -1,1 +1,0 @@
-import{o as e,c as l,a}from"./app.446fc974.js";const r='{"title":"2021 年度目标","description":"","frontmatter":{},"headers":[{"level":2,"title":"5月目标","slug":"_5月目标"}],"relativePath":"record/goal.md","lastUpdated":1620313855944}',t={},i=a('',5);t.render=function(a,r,t,s,d,_){return e(),l("div",null,[i])};export default t;export{r as __pageData};
