@@ -1,1 +1,0 @@
-import{o as e,c as r,a as t}from"./app.1b8fe215.js";const a='{"title":"每日学习记录","description":"","frontmatter":{},"relativePath":"index.md","lastUpdated":1619617052843}',n={},o=t('',5);n.render=function(t,a,n,l,i,p){return e(),r("div",null,[o])};export default n;export{a as __pageData};
