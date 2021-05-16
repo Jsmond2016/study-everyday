@@ -1,7 +1,8 @@
-name: Test
-
-on: [push]
-
+name: 部署测试
+on:
+  push:
+    branches:
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
