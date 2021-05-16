@@ -1,39 +1,34 @@
-# 0427记录-模板参考文件
+# 模板文件
 
-## 今日总结
+## 本月目标：灯塔指路
 
-- 学习了 Redux 源码知识，总结笔记为：[地址](https://www.xxx.com)
-- 学习了 React Hook 的相关知识，大致知道了 useState, useEffect, useMemo, useCallBack 的使用
-- 学习了 H5 移动端布局通用解决方案，相关资料地址：[H5 资料](https://www.xxx.com)
+- 学习 xxx 知识，整理输出 x 篇学习笔记 / 输出 xxx 项目
+- 整理现历史学习资源，断舍离
 
-## 今日算法
+## 每日总结：对成长负责
 
-[633. 平方数之和](https://leetcode-cn.com/problems/sum-of-square-numbers/)
+- **今日总结**
+  - 工作：遇到问题，难题以及解决办法记录
+- **今日算法**：记录当日在 [leetcode网站](https://leetcode-cn.com/) 刷题记录或心得
+- 好文阅读：好文推荐，包括主流的平台：github，掘金，公众号，思否，博客园，CSDN等
+- 项目推荐：github，gitee 上看到的优秀项目或作者
+- 大佬推荐：在 博客/项目 中发现的优秀作者，提炼他身上值得我学习的点
+- 学习资源推荐：文章，视频，项目代码等
+- **明日计划**：根据工作内容，个人学习目标制定
+  - 工作任务
+  - 学习计划
+- TODOS：记录在反思中发现的不足，需要提升的学习提升的东西
 
+## 每周总结：坚持记录
 
-## 好文阅读
+- **本周所有问题汇总**：不区分学习和工作，遇到的问题都是知识盲区需要自己学习的地方。
+  - 普通问题：日常踩坑，小问题
+  - 难点问题：可以提升到简历中用于面试交流的问题。
+- 知识输出：输出一篇文章进行记录。
+- 核对自己的月度目标完成度
+- 其他：断舍离
+  - 清空桌面遗留文件夹，无效文件的等
+  - 清空/完成 掘金等平台待发表文章
+- 阅读好书，好文：不限于技术，软技能（认知能力），实际技能（剪辑拍摄修图，副业钻研），休闲技能（吉他，书法，篮球等）
+- 锻炼和健康
 
-- [文章-https://www.xxx.comx](https://www.xxx.com)
-- [前端资讯-https://www.xxx.comx](https://www.xxx.com)
-- [优秀项目-https://www.xxx.comx](https://www.xxx.com)
-
-## 大佬推荐
-
-- [https://www.xxx.com](https://www.xxx.com) 这个大佬专注 vuejs 知识和总结，其中 源码相关写的非常好，参考阅读 [vue源码](https://www.xxx.com)
-- [yyy](https://www.xxx.com) 这个大佬专注 React 知识和总结，其中 源码相关写的非常好，参考阅读 [React源码](https://www.xxx.com)
-
-## 优秀项目推荐
-
-- [leetcode/github](https://github.com/Jsmond2016/leetcode) 一个记录 `javascript` 算法笔记的仓库
-- [study-everyday](https://github.com/Jsmond2016/study-everyday) 一个记录每日学习的仓库
-
-## 优秀学习资源推荐
-
-- B站
-- 博客合集
-- 某个链接
-
-## 明日计划
-
-- 学习并整理 xxx 知识点
-- 输出博客《xxx》
