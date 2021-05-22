@@ -39,6 +39,9 @@ function getGuideSidebar() {
         {
           text: '5月',
           children: [
+            { text: '0521', link: '/record/05/0521' },
+            { text: '0520', link: '/record/05/0520' },
+            { text: '0519', link: '/record/05/0519' },
             { text: '0518', link: '/record/05/0518' },
             { text: '0517', link: '/record/05/0517' },
             { text: '0516-周总结', link: '/record/05/0516-week-summary' },
