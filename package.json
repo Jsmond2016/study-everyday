@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev docs",
+    "new": "node ./utils/create.js",
     "build": "vitepress build docs",
     "serve": "vitepress serve docs"
   },
