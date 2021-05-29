@@ -62,9 +62,10 @@ const data = mode === 'day' ? dayTemplate : weekTemplate
 function writeRoute() {
   const newRoutes = routes.map(route => {
     if (route.text === month.toString().slice(1) + '月') {
+      const children = Array.isArray(route.children) ? (route.children.unshift(todayItem), route.children) : [todayItem]
       return {
         ...route,
-        children: (route.children.unshift(todayItem), route.children)
+        children: children
       }
     } else {
       return route
