@@ -60,12 +60,16 @@ const weekTemplate = `
 const data = mode === 'day' ? dayTemplate : weekTemplate
 
 function writeRoute() {
+  const hasRouteFlag = routes.map(item => item.text).indexOf(month.toString().slice(1) + '月') > -1
+  if (!hasRouteFlag) {
+    routes.push({text: month.toString().slice(1) + '月', children: []})
+  }
   const newRoutes = routes.map(route => {
     if (route.text === month.toString().slice(1) + '月') {
       const children = Array.isArray(route.children) ? (route.children.unshift(todayItem), route.children) : [todayItem]
       return {
         ...route,
-        children: children
+        children
       }
     } else {
       return route
