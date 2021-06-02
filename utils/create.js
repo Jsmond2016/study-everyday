@@ -4,7 +4,7 @@ const process = require('process')
 
 const params = process.argv.slice(2)
 // 判断是日总结还是周总结模式
-const mode = params.includes('week') ?  'week' : 'day'
+const mode = params.includes('week') ? 'week' : 'day'
 
 const today = new Date()
 let [year, month, day] = [today.getFullYear(), today.getMonth(), today.getDate()]
@@ -28,7 +28,7 @@ const todayItem = {
 const dayTemplate = `
 # ${dateTime}
 
-![](./bg-imgs/#)
+![](./bg-imgs/${dateTime}.jpg)
 
 ## 工作
 
@@ -46,7 +46,7 @@ const dayTemplate = `
 const weekTemplate = `
 # ${dateTime} 本周总结
 
-![](./bg-imgs/#)
+![](./bg-imgs/${dateTime}.jpg)
 
 ## 问题盘点
 
@@ -59,10 +59,22 @@ const weekTemplate = `
 `
 const data = mode === 'day' ? dayTemplate : weekTemplate
 
-function writeRoute() {
+const mkdirIfNotExits = (path) => {
+  const flag = fs.existsSync(path)
+  if (!flag) {
+    fs.mkdirSync(path)
+  }
+}
+
+
+async function writeRoute() {
   const hasRouteFlag = routes.map(item => item.text).indexOf(month.toString().slice(1) + '月') > -1
   if (!hasRouteFlag) {
-    routes.push({text: month.toString().slice(1) + '月', children: []})
+    routes.unshift({ text: month.toString().slice(1) + '月', children: [] })
+    const bgImgDirPath = path.resolve(recordPath, "bg-imgs")
+    const imgsDirPath = path.resolve(recordPath, "imgs")
+    fs.mkdirSync(bgImgDirPath)
+    fs.mkdirSync(imgsDirPath)
   }
   const newRoutes = routes.map(route => {
     if (route.text === month.toString().slice(1) + '月') {
@@ -75,44 +87,40 @@ function writeRoute() {
       return route
     }
   })
-  fs.stat(recordPath, (err, stats) => {
-    if (!err && stats.isDirectory()) {
-      fs.writeFile(filePath, `module.exports = ${JSON.stringify(newRoutes, null, 2)}`, (error) => {
-        if (!error) {
-          const msg = mode === 'day' ? '日总结模板-路由-写入成功' : '周总结模板-路由-写入成功'
-          console.log(msg)
-        } else {
-          console.log('路由--err', err)
-        }
-      })
-    }else {
-      console.log('writeRoute--err', err)
+  fs.stat(filePath, async (err, stats) => {
+    if (err) {
+      console.log('err', err)
+      return
     }
+    fs.writeFile(filePath, `module.exports = ${JSON.stringify(newRoutes, null, 2)}`, (error) => {
+      if (!error) {
+        const msg = mode === 'day' ? '路由==日模板==写入成功' : '路由==周模板==写入成功'
+        console.log(msg + ':' + filePath)
+      } else {
+        console.log('文件写入失败')
+      }
+    })
   })
 }
 
-function createTodayFile(name, data) {
+async function createTodayFile(name, data) {
   const writeFileAction = (name, data) => {
     fs.writeFile(`${recordPath}/${name}.md`, data, (error) => {
       if (!error) {
         const msg = mode === 'day' ? '日总结模板写入成功' : '周总结模板写入成功'
-        console.log(msg)
+        console.log(msg + ':' + recordPath)
       } else {
-        console.log('模板写入失败 error', error)
+        console.log('文件写入失败')
       }
     })
   }
-
+  await mkdirIfNotExits(recordPath)
   fs.stat(recordPath, async (err, stats) => {
-    if (!err && stats.isDirectory()) {
-      writeFileAction(name, data)
-    } else if(!err && !stats.isDirectory()) {
-      console.log('recordPath: ', recordPath);
-      await fs.mkdir(recordPath)
-      writeFileAction(name, data)
-    } else {
-      console.log('createTodayFile---err', err)
+    if (err) {
+      console.log('error===')
+      return
     }
+    writeFileAction(name, data)
   })
 }
 
