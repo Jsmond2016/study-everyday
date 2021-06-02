@@ -95,7 +95,7 @@ async function writeRoute() {
     fs.writeFile(filePath, `module.exports = ${JSON.stringify(newRoutes, null, 2)}`, (error) => {
       if (!error) {
         const msg = mode === 'day' ? '路由==日模板==写入成功' : '路由==周模板==写入成功'
-        console.log(msg + ':' + filePath)
+        console.log(msg + ':   ' + filePath)
       } else {
         console.log('文件写入失败')
       }
@@ -108,7 +108,7 @@ async function createTodayFile(name, data) {
     fs.writeFile(`${recordPath}/${name}.md`, data, (error) => {
       if (!error) {
         const msg = mode === 'day' ? '日总结模板写入成功' : '周总结模板写入成功'
-        console.log(msg + ':' + recordPath)
+        console.log(msg + ':  ' + recordPath + '/' + name + '.md')
       } else {
         console.log('文件写入失败')
       }
