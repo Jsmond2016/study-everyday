@@ -32,17 +32,23 @@ const dayTemplate = `
 
 ## 工作
 
-## 好文推荐
-
-## 项目推荐
-
-## 好用的工具：
+## 任务
 
 ## 反思
 
 ## 明日计划
 
+---
+
+## 好文推荐
+
+## 项目推荐
+
+## 好用的工具
+
 ## TODOS`
+
+
 const weekTemplate = `
 # ${dateTime} 本周总结
 
@@ -51,10 +57,13 @@ const weekTemplate = `
 ## 问题盘点
 
 
+## 任务总结
+> 本周任务完成度，完成感受/未完成理由
+
 ## 笔记输出
 
 
-## 周末阅读
+## 周末学习
 
 `
 const data = mode === 'day' ? dayTemplate : weekTemplate

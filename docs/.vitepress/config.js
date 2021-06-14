@@ -36,6 +36,7 @@ function getGuideSidebar() {
       children: [
         { text: 'goal', link: '/record/goal' },
         { text: '模板', link: '/record/template' },
+        { text: '6月目标', link: '/record/target-month-6' },
         // {
         //   text: '5月',
         //   children: [
