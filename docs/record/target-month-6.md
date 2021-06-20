@@ -11,6 +11,15 @@
   - 任务分析：还剩 9 题，完成后做归类和总结
   - 任务拆分：
 
+## 动态任务
+
+> 从 TODO 总结提炼出来的临时任务
+
+- Nestjs学习：可以结合B站之前关注的视频
+- Docker，Nginx，DevOps 学习：结合掘金小册和B站视频学习资料
+- 简历刷新
+- 系统整理自己的算法知识体系：[数据结构和算法学习](https://jsmond2016.github.io/leetcode/)，今年的 Flag 不能倒!!!，资料参考 chrome 书签-算法文件夹
+- Vue2 源码学习后，顺便学习 Vue3 源码的特点：[cuixiaorui/mini-vue](https://github.com/cuixiaorui/mini-vue)，对比学习 [Vue2设计过程到Vue3的蜕变、Vue.js源码技术核心原理揭秘](https://www.bilibili.com/video/BV1554y157cB)
 
 
 ## 任务拆解
