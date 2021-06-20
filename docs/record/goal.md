@@ -7,6 +7,18 @@
 - [ ] 算法精进
 - [ ] 面试题进阶
 
+## 面试系列
+
+- [FEX 面试问题](https://github.com/fex-team/interview-questions) 先明白面试官想要什么样的面试者
+- [面试题-高级前端进阶-木易杨](https://github.com/Advanced-Frontend/Daily-Interview-Question)
+- [大前端面试宝典 - 图解前端](https://github.com/azl397985856/fe-interview)
+- [前端面试每日 3+1](https://github.com/haizlin/fe-interview)
+- [饿了么-Nodejs面试题](https://github.com/ElemeFE/node-interview) 攻克 Nodejs 面试
+- [面试指南](https://github.com/poetries/FE-Interview-Questions)
+- [h5bp/Front-end-Developer-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits/main) 老外整理的面经，官网可以切换 [中文版本](https://h5bp.org/Front-end-Developer-Interview-Questions/translations/chinese/)
+- [前端硬核面试专题](https://github.com/biaochenxuying/blog/blob/master/interview/fe-interview.md)
+- [夜尽天明的博客](https://github.com/biaochenxuying/blog)
+
 ## 源码系列
 
 - [ ] Vue 2.x 源码阅读（有视频） + 输出笔记，[学习地址](https://www.bilibili.com/video/BV1LE411e7HE)
@@ -14,7 +26,7 @@
 - [ ] React 16 源码阅读（视频） + 输出笔记，[学习地址](#)
 - [x] [React-Router 源码](https://github.com/Jsmond2016/react-router-dom-nut) 0523 完成
 - [ ] Vue-Router 源码，[学习地址](https://www.bilibili.com/video/BV1Ui4y177PA)
-- [ ] Redux 源码，[学习地址](https://www.bilibili.com/video/BV1254y1L7UP?from=search&seid=18119191314623694637)
+- [ ] Redux 源码，[学习地址](https://www.bilibili.com/video/BV1254y1L7UP?from=search&seid=18119191314623694637)，[地址2](https://hyf.js.org/react-naive-book/lesson30)
 - [ ] Vuex 源码，[学习地址](#)
 - [ ] Webpack 源码：
   - [ ] 原理
