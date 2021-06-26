@@ -1,1 +1,0 @@
-import{o as e,c as r,a}from"./app.306ba72d.js";const t='{"title":"每日学习记录","description":"","frontmatter":{},"headers":[{"level":2,"title":"优秀的博客推荐","slug":"优秀的博客推荐"},{"level":2,"title":"每日阅读","slug":"每日阅读"}],"relativePath":"index.md","lastUpdated":1624636336753}',l={},n=a('',9);l.render=function(a,t,l,o,i,h){return e(),r("div",null,[n])};export default l;export{t as __pageData};
