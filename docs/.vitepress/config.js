@@ -1,3 +1,6 @@
+const taskLists = require('markdown-it-task-lists');
+
+
 module.exports = {
   lang: 'zh-CN',
   title: '每日学习',
@@ -25,6 +28,13 @@ module.exports = {
 
     sidebar: {
       '/': getGuideSidebar()
+    }
+  },
+  markdown: {
+
+    config: (md) => {
+      // use more markdown-it plugins!
+      md.use(taskLists)
     }
   }
 }
