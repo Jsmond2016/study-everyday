@@ -25,7 +25,7 @@
 - [ ] Vue 3.x 源码阅读（有视频） + 输出笔记，[学习地址](https://www.bilibili.com/video/BV1fy4y1y7sc?p=1)
 - [ ] React 16 源码阅读（视频） + 输出笔记，[学习地址](#)
 - [x] [React-Router 源码](https://github.com/Jsmond2016/react-router-dom-nut) 0523 完成
-- [ ] Vue-Router 源码，[学习地址](https://www.bilibili.com/video/BV1Ui4y177PA)
+- [ ] Vue-Router 源码，[学习地址](https://www.bilibili.com/video/BV1Ui4y177PA)， [Vue秩序白银 —构建自己的Vuex](https://juejin.cn/post/6844903801443500046)
 - [ ] Redux 源码，[学习地址](https://www.bilibili.com/video/BV1254y1L7UP?from=search&seid=18119191314623694637)，[地址2](https://hyf.js.org/react-naive-book/lesson30)
 - [ ] Vuex 源码，[学习地址](#)
 - [ ] Webpack 源码：
@@ -40,7 +40,7 @@
 - [ ] Express 源码，[学习地址](#)
 - [ ] Koa 源码，[学习地址](#)
 - [ ] 骨架屏原理：[学习地址](https://www.bilibili.com/video/BV1Qk4y1271Y)
-
+- [rollup - 构建原理及简易实现](https://mp.weixin.qq.com/s/-bCCUBnEjjRkeOcLhXjS4Q)，B站也有对应的视频
 
 
 ## 主题系列
