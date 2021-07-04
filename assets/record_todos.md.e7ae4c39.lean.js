@@ -1,0 +1,1 @@
+import{o as e,c as t,a as l}from"./app.53cfeb6e.js";const i='{"title":"TODOS","description":"","frontmatter":{},"headers":[{"level":2,"title":"TODOS","slug":"todos"}],"relativePath":"record/todos.md","lastUpdated":1625414420393}',r={},s=l('',2);r.render=function(l,i,r,a,o,d){return e(),t("div",null,[s])};export default r;export{i as __pageData};
