@@ -21,14 +21,14 @@
 
 ## 源码系列
 
-- [ ] Vue 2.x 源码阅读（有视频） + 输出笔记，[学习地址](https://www.bilibili.com/video/BV1LE411e7HE)
+- [X] [Vue 2.x 源码阅读](https://github.com/Jsmond2016/blog/issues/5) 7月4日完成，[学习地址](https://www.bilibili.com/video/BV1LE411e7HE)
 - [ ] Vue 3.x 源码阅读（有视频） + 输出笔记，[学习地址](https://www.bilibili.com/video/BV1fy4y1y7sc?p=1)
+- [ ] Vue-Router 源码，[学习地址](https://www.bilibili.com/video/BV1Ui4y177PA)， [Vue秩序白银 —构建自己的Vuex](https://juejin.cn/post/6844903801443500046)
+- [ ] Vuex 源码，[学习地址](#)，学习地址：[手写 vue 全家桶](https://www.bilibili.com/video/BV1PX4y1P7TF?p=1)，备用地址：本地文件 `E:b站下载\从零玩转-手写Vue全家桶`
 - [ ] React 16 源码阅读（视频） + 输出笔记，[学习地址](#)
 - [x] [React-Router 源码](https://github.com/Jsmond2016/react-router-dom-nut) 0523 完成
-- [ ] Vue-Router 源码，[学习地址](https://www.bilibili.com/video/BV1Ui4y177PA)， [Vue秩序白银 —构建自己的Vuex](https://juejin.cn/post/6844903801443500046)
 - [ ] Redux 源码，[学习地址](https://www.bilibili.com/video/BV1254y1L7UP?from=search&seid=18119191314623694637)，[地址2](https://hyf.js.org/react-naive-book/lesson30)
-- [ ] Vuex 源码，[学习地址](#)
-- [ ] Webpack 源码：
+- [ ] Webpack 源码：学习地址 [腾讯课堂-qq登录](https://ke.qq.com/webcourse/index.html#cid=334441&term_id=100396918&taid=2669936355121769&type=1024&vid=5285890786323603218), [地址2](https://ke.qq.com/webcourse/index.html#cid=3098888&term_id=103220429&taid=10356162586167560&type=1024&vid=5285890810073557074)
   - [ ] 原理
   - [ ] loader
   - [ ] plugin

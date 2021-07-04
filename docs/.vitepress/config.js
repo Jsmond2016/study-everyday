@@ -44,7 +44,7 @@ function getGuideSidebar() {
     {
       text: '每日学习',
       children: [
-        { text: 'goal', link: '/record/goal' },
+        { text: '2021年度目标', link: '/record/goal' },
         { text: '模板', link: '/record/template' },
         { text: '6月目标', link: '/record/target-month-6' },
         // {
