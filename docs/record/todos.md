@@ -11,3 +11,22 @@
 - umijs 背后原理探究
 - hooks 背后原理实现，总结常见的容易踩的坑。
 - [软考](https://jsmond2016.github.io/study-everyday/record/06/0606-week-summary.html)
+- React/Vue + Node + DevOps 全栈实战上线运维
+
+
+## 阅读计划
+
+**掘金**
+
+- 深入理解 TCP 协议：从原理到实战
+- Electron + React 从 0 到 1 实现简历平台实战
+- babel 插件通关秘籍
+- 从 0 到 1 实现一套 CI/CD 流程
+- 基于 Node 的 DevOps 实战
+
+
+
+**拉勾教育**
+
+- 前端进击笔记
+- 前端工程化
