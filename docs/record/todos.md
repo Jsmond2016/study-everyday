@@ -12,6 +12,13 @@
 - hooks 背后原理实现，总结常见的容易踩的坑。
 - [软考](https://jsmond2016.github.io/study-everyday/record/06/0606-week-summary.html)
 - React/Vue + Node + DevOps 全栈实战上线运维
+- 按照专题整理自己的知识体系/面试知识体系
+  - 按照专题整理对应的知识
+  - 知识梳理成思维导图，导出为图片，参考这个 [15 张前端高清知识地图，强烈建议收藏](https://juejin.cn/post/6976157870014332935)
+- 随手记：视频资源 vue 响应式原理和diff算法
+  - [尚硅谷-Vue源码解析之数据响应式原理](https://www.bilibili.com/video/BV1G54y1s7xV)
+  - [尚硅谷-Vue源码解析之虚拟DOM和diff算法](https://www.bilibili.com/video/BV1v5411H7gZ)
+  - [尚硅谷-2021最新版axios入门与源码解析](https://www.bilibili.com/video/BV1wr4y1K7tq)
 
 
 ## 阅读计划
