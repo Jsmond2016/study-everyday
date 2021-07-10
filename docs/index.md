@@ -1,28 +1,7 @@
 # 每日学习记录
 
-> 这是一个记录每日学习的仓库
+> 这是一个记录每日学习的仓库，灵感来源：[俊劫的每日学习打卡](https://alexwjj.github.io/)
 
-- 灵感来源：[俊劫的每日学习打卡](https://alexwjj.github.io/)
-
-# 添加 task-lists
-
-- 参考：https://github.com/vuestorefront/vue-storefront/issues/4391
-- 相关的库：[markdown-it-task-lists](https://github.com/revin/markdown-it-task-lists)
-- [vitepress 配置](https://vitepress.vuejs.org/guide/markdown.html#advanced-configuration)
-
-```js
-const taskLists = require("markdown-it-task-lists")
-
-// ...
-module.exports = {
-  markdown: {
-    config: (md) => {
-      // use more markdown-it plugins!
-      md.use(taskLists)
-    },
-  },
-}
-```
 
 **好文推荐**
 
