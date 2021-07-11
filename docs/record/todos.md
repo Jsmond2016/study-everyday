@@ -2,8 +2,8 @@
 
 - [Bash 编程学习](https://wangdoc.com/bash/intro.html)
 - 学习资料利用起来：掘金小册，极客时间，拉勾教育
-- 女朋友的模拟面试准备
-- H5 开发经验文档整理，思维导图完善。
+- [x] 女朋友的模拟面试准备
+- [x] H5 开发经验文档整理，思维导图完善。
 - [x] Bug 复盘总结
 - Nestjs
 - Docker，Nginx，DevOps 学习
@@ -19,7 +19,7 @@
   - [尚硅谷-Vue源码解析之数据响应式原理](https://www.bilibili.com/video/BV1G54y1s7xV)
   - [尚硅谷-Vue源码解析之虚拟DOM和diff算法](https://www.bilibili.com/video/BV1v5411H7gZ)
   - [尚硅谷-2021最新版axios入门与源码解析](https://www.bilibili.com/video/BV1wr4y1K7tq)
-
+  - [黄奕大佬的-Vue.js 技术揭秘](https://ustbhuangyi.github.io/vue-analysis/) 配合对应视频食用更佳，顺便优化一下之前的学习笔记，资料地址 `E:\学习资料\源码\高级-源码系列\Vue.js 源码全方位深入解析`
 
 ## 阅读计划
 
