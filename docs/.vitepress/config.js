@@ -47,12 +47,14 @@ function getGuideSidebar() {
         { text: '2021年度目标', link: '/record/goal' },
         { text: '模板', link: '/record/template' },
         { text: 'TODOS', link: '/record/todos' },
+        { text: '面试冲刺', link: '/record/fe-interview' },
         {
           text: '读书笔记',
           children: [
             { text: '如何高效学习', link: '/record/read-notes/book-1' }
           ]
         },
+        { text: '8月目标', link: '/record/target-month-8' },
         { text: '7月目标', link: '/record/target-month-7' },
         { text: '6月目标', link: '/record/target-month-6' },
         // {

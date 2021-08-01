@@ -1,4 +1,4 @@
-# 7月目标
+# 8月目标
 
 ## 目标
 
@@ -9,7 +9,6 @@
 - [ ] React 原理：本地文件夹 `E:\b站下载\React源码相关`
   - [ ] 手写 React 
   - [ ] 手写 React-Fiber
-  - [x] 手写 React-Hook
   - [ ] 手写 Redux
 
 
