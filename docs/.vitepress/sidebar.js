@@ -28,7 +28,7 @@ module.exports = [
     "text": "7月",
     "children": [
       {
-        "text": "待完成-7月总结",
+        "text": "7月总结",
         "link": "/record/07/0799-end"
       },
       {

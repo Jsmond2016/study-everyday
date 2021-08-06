@@ -49,9 +49,10 @@ function getGuideSidebar() {
         { text: 'TODOS', link: '/record/todos' },
         { text: '面试冲刺', link: '/record/fe-interview' },
         {
-          text: '读书笔记',
+          text: '随笔文章',
           children: [
-            { text: '如何高效学习', link: '/record/read-notes/book-1' }
+            { text: '如何高效学习', link: '/record/read-notes/book-1' },
+            { text: '如何做前端技术设计', link: '/record/read-notes/book-2' }
           ]
         },
         { text: '8月目标', link: '/record/target-month-8' },
