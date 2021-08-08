@@ -9,6 +9,7 @@
 - Docker，Nginx，DevOps 学习
 - ahooks 了解常见的使用
 - umijs 背后原理探究
+- [Umijs 实战个人简单的后台项目](https://github.com/Jsmond2016/umi-antd-backend)
 - hooks 背后原理实现，总结常见的容易踩的坑。
 - [软考](https://jsmond2016.github.io/study-everyday/record/06/0606-week-summary.html)
 - React/Vue + Node + DevOps 全栈实战上线运维
