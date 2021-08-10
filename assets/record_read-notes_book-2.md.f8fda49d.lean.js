@@ -1,1 +1,0 @@
-import{o as l,c as i,a as u}from"./app.f5a3594a.js";const a='{"title":"如何做前端技术设计","description":"","frontmatter":{},"relativePath":"record/read-notes/book-2.md","lastUpdated":1628522408088}',e={},r=u('',2);e.render=function(u,a,e,t,o,s){return l(),i("div",null,[r])};export default e;export{a as __pageData};
