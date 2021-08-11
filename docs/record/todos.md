@@ -36,5 +36,14 @@
 
 **拉勾教育**
 
+> [学习地址](https://kaiwu.lagou.com/hasBuy/special)
+
 - 前端进击笔记
 - 前端工程化
+
+
+**极客时间**
+
+> [学习地址](https://time.geekbang.org/dashboard/course)
+
+- 浏览器工作原理与实践: 这个是花了很多钱买的，要好好消化
