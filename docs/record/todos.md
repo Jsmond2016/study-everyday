@@ -47,3 +47,12 @@
 > [学习地址](https://time.geekbang.org/dashboard/course)
 
 - 浏览器工作原理与实践: 这个是花了很多钱买的，要好好消化
+
+
+
+## 实战计划
+
+- 全栈项目，分别使用3种后端方式实现
+  - Nodejs
+  - Go
+  - Java

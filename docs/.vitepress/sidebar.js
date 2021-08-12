@@ -3,6 +3,10 @@ module.exports = [
     "text": "8月",
     "children": [
       {
+        "text": "0812",
+        "link": "/record/08/0812"
+      },
+      {
         "text": "0811",
         "link": "/record/08/0811"
       },
