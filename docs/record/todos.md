@@ -21,7 +21,12 @@
   - [尚硅谷-Vue源码解析之虚拟DOM和diff算法](https://www.bilibili.com/video/BV1v5411H7gZ)
   - [尚硅谷-2021最新版axios入门与源码解析](https://www.bilibili.com/video/BV1wr4y1K7tq)
   - [黄奕大佬的-Vue.js 技术揭秘](https://ustbhuangyi.github.io/vue-analysis/) 配合对应视频食用更佳，顺便优化一下之前的学习笔记，资料地址 `E:\学习资料\源码\高级-源码系列\Vue.js 源码全方位深入解析`
-
+- 复盘这个月的 todos，这个月的目标，不能无所事事
+- 完善 前端技术设计 文章
+- 整理一波 vite 相关的内容（文章，教程，实战系列）
+- 掘金小册的 记账项目，实战并且部署到自己的服务器
+- devops 项目实战，并部署到自己的服务器
+- 掘金小册的 记账项目，整理自己的 react + ts；vue3 + ts 版本
 ## 阅读计划
 
 **掘金**

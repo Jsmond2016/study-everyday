@@ -7,6 +7,10 @@ module.exports = [
         "link": "/record/08/0823"
       },
       {
+        "text": "0822-周总结",
+        "link": "/record/08/0822-week-summary"
+      },
+      {
         "text": "0819",
         "link": "/record/08/0819"
       },
