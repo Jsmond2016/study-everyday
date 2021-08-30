@@ -9,6 +9,23 @@
 
 ## 面试系列
 
+**文章**
+
+- [一个合格(优秀)的前端都应该阅读这些文章](https://juejin.cn/post/6844903896637259784)
+- [前端进阶指南](https://juejin.cn/post/6977258091662278669)
+- [中高级前端大厂面试秘籍，为你保驾护航金三银四，直通大厂-上](https://juejin.cn/post/6844903776512393224)
+- [中高级前端大厂面试秘籍，为你保驾护航金三银四，直通大厂-下](https://juejin.cn/post/6844903830979608584)
+- [前端 100 问：能搞懂 80% 的请把简历给我](https://juejin.cn/post/6844903885488783374)
+- [30 道 Vue 面试题，内含详细讲解（涵盖入门到精通，自测 Vue 掌握程度）](https://juejin.cn/post/6844903918753808398)
+- [这一次，彻底弄懂 JavaScript 执行机制](https://juejin.cn/post/6844903512845860872)
+- [一名【合格】前端工程师的自检清单](https://juejin.cn/post/6844903830887366670)
+- [写给初中级前端的高级进阶指南](https://juejin.cn/post/6844904103504527374)
+- [一个合格的中级前端工程师需要掌握的 28 个 JavaScript 技巧](https://juejin.cn/post/6844903856489365518#heading-20)
+
+---
+
+**博客/专栏**
+
 - [FEX 面试问题](https://github.com/fex-team/interview-questions) 先明白面试官想要什么样的面试者
 - [面试题-高级前端进阶-木易杨](https://github.com/Advanced-Frontend/Daily-Interview-Question)
 - [大前端面试宝典 - 图解前端](https://github.com/azl397985856/fe-interview)
@@ -18,6 +35,7 @@
 - [h5bp/Front-end-Developer-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits/main) 老外整理的面经，官网可以切换 [中文版本](https://h5bp.org/Front-end-Developer-Interview-Questions/translations/chinese/)
 - [前端硬核面试专题](https://github.com/biaochenxuying/blog/blob/master/interview/fe-interview.md)
 - [夜尽天明的博客](https://github.com/biaochenxuying/blog)
+
 
 ## 源码系列
 
