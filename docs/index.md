@@ -7,6 +7,13 @@
 
 - [跳槽人速来，面经&资源分享](https://juejin.cn/post/6942988170208215076#heading-16) 面经+面经资源，**值得反复看**。
 
+
+## 每日算法
+
+- [labuladong 的算法小抄](https://labuladong.gitbook.io/algo/)
+- [力扣加加](https://leetcode-solution-leetcode-pp.gitbook.io/leetcode-solution/)
+- [小浩算法](https://github.com/geekxh/hello-algorithm)
+
 ## 优秀的个人博客推荐
 
 - [冴羽的博客](https://github.com/mqyqingfeng/Blog)
@@ -33,3 +40,5 @@
 - [掘金-前端](https://juejin.cn/frontend)
 - [setment-推荐](https://segmentfault.com/blogs)
 - [v2ex](https://v2ex.com/?tab=jobs)
+
+
