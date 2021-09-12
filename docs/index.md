@@ -37,6 +37,7 @@
 
 ## 每日阅读
 
+- [每日时报](https://wubaiqing.github.io/zaobao/)
 - [掘金-前端](https://juejin.cn/frontend)
 - [setment-推荐](https://segmentfault.com/blogs)
 - [v2ex](https://v2ex.com/?tab=jobs)

@@ -7,6 +7,11 @@
 - [ ] 算法精进
 - [ ] 面试题进阶
 
+## 学习记录
+
+- [Go语言学习记录](https://github.com/Jsmond2016/go-study)
+- [算法-刷题-学习记录](https://jsmond2016.github.io/leetcode/)
+
 ## 面试系列
 
 **文章**
