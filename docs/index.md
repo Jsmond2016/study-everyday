@@ -8,6 +8,13 @@
 - [跳槽人速来，面经&资源分享](https://juejin.cn/post/6942988170208215076#heading-16) 面经+面经资源，**值得反复看**。
 
 
+## 每日阅读
+
+- [每日时报](https://wubaiqing.github.io/zaobao/)
+- [掘金-前端](https://juejin.cn/frontend)
+- [setment-推荐](https://segmentfault.com/blogs)
+- [v2ex](https://v2ex.com/?tab=jobs)
+
 ## 每日算法
 
 - [labuladong 的算法小抄](https://labuladong.gitbook.io/algo/)
@@ -35,11 +42,5 @@
 - [快狗打车前端团队](https://juejin.cn/user/2612095359650712/posts)
 
 
-## 每日阅读
-
-- [每日时报](https://wubaiqing.github.io/zaobao/)
-- [掘金-前端](https://juejin.cn/frontend)
-- [setment-推荐](https://segmentfault.com/blogs)
-- [v2ex](https://v2ex.com/?tab=jobs)
 
 
