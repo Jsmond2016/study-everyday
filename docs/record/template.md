@@ -9,11 +9,29 @@
 
 - **今日总结**
   - 工作：遇到问题，难题以及解决办法记录
-- **今日算法**：记录当日在 [leetcode网站](https://leetcode-cn.com/) 刷题记录或心得
-- 好文阅读：好文推荐，包括主流的平台：github，掘金，公众号，思否，博客园，CSDN等
-- 项目推荐：github，gitee 上看到的优秀项目或作者
+  - 思考：若没有其他事情，思考周围同事在做什么，哪些是自己没接触过的，看看人家怎么实现的，学习学习。如 UI 单元测试，接口单元测试，集成环境搭建等...
+- **今日算法**：
+  - 实战和总结：记录当日在 [leetcode网站](https://leetcode-cn.com/) 刷题记录或心得
+  - 优秀的项目/人/资料 推荐
+- **好文阅读**：
+  - 掘金：[热门，最新，热榜](https://juejin.cn/frontend)
+  - 公众号：置顶的几个大佬的新文章
+  - 思否：[前端](https://segmentfault.com/channel/frontend)
+  - v2ex：[v2ex](https://www.v2ex.com/?tab=tech)
+  - CNode：[cnode 社区](https://cnodejs.org/?tab=all)
+  - github：[github all activity](https://github.com/)
+- 项目推荐：
+  - [github/trending](https://github.com/trending)
+  - [HelloGitHub](https://hellogithub.com/) 分享 GitHub 上有趣、入门级的开源项目
+  - [掘金圈子-优秀的开源项目](https://juejin.cn/pin/club/6824710203196309518?sort=newest)
+  - [gitee开源项目](https://gitee.com/explore/all)
 - 大佬推荐：在 博客/项目 中发现的优秀作者，提炼他身上值得我学习的点
-- 学习资源推荐：文章，视频，项目代码等
+  - github
+  - 掘金
+- 学习资源推荐：
+  - 文章
+  - 视频
+  - 项目代码等
 - **明日计划**：根据工作内容，个人学习目标制定
   - 工作任务
   - 学习计划
