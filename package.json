@@ -11,7 +11,7 @@
     "serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vitepress": "^0.13.2"
+    "vitepress": "^0.19.1"
   },
   "dependencies": {
     "markdown-it-task-lists": "^2.1.1"
