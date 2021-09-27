@@ -56,6 +56,7 @@
   - [x] [React-Router 源码](https://github.com/Jsmond2016/react-router-dom-nut) 0523 完成
   - [ ] Redux 源码，[学习地址](https://www.bilibili.com/video/BV1254y1L7UP?from=search&seid=18119191314623694637)，[地址2](https://hyf.js.org/react-naive-book/lesson30)
   - [ ] React Fiber
+  - 好文：[React 运行时优化方案的演进](https://juejin.cn/post/7010539227284766751)
 - [ ] Webpack 源码：学习地址 [腾讯课堂-qq登录](https://ke.qq.com/webcourse/index.html#cid=334441&term_id=100396918&taid=2669936355121769&type=1024&vid=5285890786323603218), [地址2](https://ke.qq.com/webcourse/index.html#cid=3098888&term_id=103220429&taid=10356162586167560&type=1024&vid=5285890810073557074)
   - [ ] 原理
   - [ ] loader
