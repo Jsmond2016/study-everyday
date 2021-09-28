@@ -52,38 +52,13 @@ function getGuideSidebar() {
           text: '随笔文章',
           children: [
             { text: '如何高效学习', link: '/record/read-notes/book-1' },
-            { text: '如何做前端技术设计', link: '/record/read-notes/book-2' }
+            { text: '如何做前端技术设计', link: '/record/read-notes/book-2' },
+            { text: 'Docker教程', link: '/record/read-notes/docker-note' }
           ]
         },
         { text: '8月目标', link: '/record/target-month-8' },
         { text: '7月目标', link: '/record/target-month-7' },
         { text: '6月目标', link: '/record/target-month-6' },
-        // {
-        //   text: '5月',
-        //   children: [
-        //     { text: '0528', link: '/record/05/0528' },
-        //     { text: '0527', link: '/record/05/0527' },
-        //     { text: '0526', link: '/record/05/0526' },
-        //     { text: '0525', link: '/record/05/0525' },
-        //     { text: '0524', link: '/record/05/0524' },
-        //     { text: '0523-周总结', link: '/record/05/0523-week-summary' },
-        //     { text: '0521', link: '/record/05/0521' },
-        //     { text: '0520', link: '/record/05/0520' },
-        //     { text: '0519', link: '/record/05/0519' },
-        //     { text: '0518', link: '/record/05/0518' },
-        //     { text: '0517', link: '/record/05/0517' },
-        //     { text: '0516-周总结', link: '/record/05/0516-week-summary' },
-        //     { text: '0514', link: '/record/05/0514' },
-        //     { text: '0513', link: '/record/05/0513' },
-        //     { text: '0512', link: '/record/05/0512' },
-        //     { text: '0511', link: '/record/05/0511' },
-        //     { text: '0510', link: '/record/05/0510' },
-        //     { text: '0509', link: '/record/05/0509' },
-        //     { text: '0508', link: '/record/05/0508' },
-        //     { text: '0507', link: '/record/05/0507' },
-        //     { text: '0506', link: '/record/05/0506' },
-        //   ]
-        // },
         ...require('./sidebar')
       ]
     },
