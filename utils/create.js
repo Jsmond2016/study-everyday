@@ -1,74 +1,63 @@
 const path = require('path')
 const fs = require('fs')
 const process = require('process')
-
-const params = process.argv.slice(2)
-// 判断是日总结还是周总结模式
-const mode = params.includes('week') ? 'week' : 'day'
-
-const today = new Date()
-let [year, month, day] = [today.getFullYear(), today.getMonth(), today.getDate()]
-
-month = (month += 1, month < 10 ? month.toString().padStart(2, '0') : month)
-day = day < 10 ? day.toString().padStart(2, '0') : day
-
+const consola = require('consola')
 const filePath = path.resolve(__dirname, '../docs/.vitepress/sidebar.js')
-const recordPath = path.resolve(__dirname, '../docs/record', month.toString())
 const routes = require(filePath)
 
-const dateTime = month + '' + day
-const fileName = mode === 'day' ? dateTime : `${dateTime}-week-summary`
 
-const todayItem = {
-  text: mode === 'day' ? dateTime : dateTime + '-周总结',
-  link: `/record/${month}/${fileName}`
+
+start();
+
+
+
+
+/** ------------以下都是逻辑代码---------------  */
+
+
+async function start() {
+  const { type, dateTime, recordPath, todayItem, month } = init()
+  await writeRoute({ type, dateTime, recordPath, todayItem, month })
+  const template = await readFileContent(type, dateTime)
+  await createTodayFile({ name: dateTime, data: template, recordPath, type })
 }
 
 
-const dayTemplate = `
-# ${dateTime}
+function init() {
+  const params = process.argv.slice(2)
+  const modeMap = {
+    week: 'week',
+    day: 'day',
+    month: 'month',
+    year: 'year'
+  }
 
-![](./bg-imgs/${dateTime}.jpg)
+  const today = new Date()
 
-## 工作
+  let [year, month, day] = [today.getFullYear(), today.getMonth(), today.getDate()]
+  month = (month += 1, month < 10 ? month.toString().padStart(2, '0') : month)
+  day = day < 10 ? day.toString().padStart(2, '0') : day
 
-## 任务
+  const type = modeMap[params[0]] || 'day'
+  const dateTime = params[1] || `${month}${day}`
 
-## 反思
+  const recordPath = path.resolve(__dirname, '../docs/record', month.toString())
 
-## 明日计划
+  const fileName = type === 'day' ? dateTime : `${dateTime}-week-summary`
 
----
+  const todayItem = {
+    text: type === 'day' ? dateTime : dateTime + '-周总结',
+    link: `/record/${month}/${fileName}`
+  }
 
-## 好文推荐
-
-## 项目推荐
-
-## 好用的工具
-
-## TODOS`
-
-
-const weekTemplate = `
-# ${dateTime} 本周总结
-
-![](./bg-imgs/${dateTime}.jpg)
-
-## 问题盘点
-
-
-## 任务总结
-> 本周任务完成度，完成感受/未完成理由
-
-## 笔记输出
-
-
-## 周末学习
-
-## 下周任务
-
-`
-const data = mode === 'day' ? dayTemplate : weekTemplate
+  return {
+    type,
+    dateTime,
+    recordPath,
+    todayItem,
+    month
+  }
+}
 
 const mkdirIfNotExits = (path) => {
   const flag = fs.existsSync(path)
@@ -78,7 +67,7 @@ const mkdirIfNotExits = (path) => {
 }
 
 
-async function writeRoute() {
+async function writeRoute({ month, todayItem, recordPath, type }) {
   const hasRouteFlag = routes.map(item => item.text).indexOf(month.toString().slice(1) + '月') > -1
   if (!hasRouteFlag) {
     routes.unshift({ text: month.toString().slice(1) + '月', children: [] })
@@ -100,40 +89,51 @@ async function writeRoute() {
   })
   fs.stat(filePath, async (err, stats) => {
     if (err) {
-      console.log('err', err)
+      consola.info(err)
       return
     }
     fs.writeFile(filePath, `module.exports = ${JSON.stringify(newRoutes, null, 2)}`, (error) => {
       if (!error) {
-        const msg = mode === 'day' ? '路由==日模板==写入成功' : '路由==周模板==写入成功'
-        console.log(msg + ':   ' + filePath)
+        const msg = type === 'day' ? '路由==日模板==写入成功' : '路由==周模板==写入成功'
+        consola.success(msg + ':   ' + filePath)
       } else {
-        console.log('文件写入失败')
+        consola.err('文件写入失败')
       }
     })
   })
 }
 
-async function createTodayFile(name, data) {
+async function createTodayFile({ name, data, recordPath, type }) {
   const writeFileAction = (name, data) => {
     fs.writeFile(`${recordPath}/${name}.md`, data, (error) => {
       if (!error) {
-        const msg = mode === 'day' ? '日总结模板写入成功' : '周总结模板写入成功'
-        console.log(msg + ':  ' + recordPath + '/' + name + '.md')
+        const msg = type === 'day' ? '日总结模板写入成功' : '周总结模板写入成功'
+        consola.success(msg + ':  ' + recordPath + '\\' + name + '.md')
       } else {
-        console.log('文件写入失败')
+        consola.err('文件写入失败')
       }
     })
   }
   await mkdirIfNotExits(recordPath)
   fs.stat(recordPath, async (err, stats) => {
     if (err) {
-      console.log('error===')
+      consola.err('error===')
       return
     }
     writeFileAction(name, data)
   })
 }
 
-writeRoute()
-createTodayFile(fileName, data)
+function readFileContent(fileName, time) {
+  return new Promise((resolve) => {
+    const pathUrl = path.resolve(__dirname, 'templates', `${fileName}.md`)
+    fs.readFile(pathUrl, { encoding: 'utf8' }, (err, data) => {
+      if (!err) {
+        const valueStr = data.replace(/\$\{dateTime\}/g, time)
+        resolve(valueStr)
+      }
+      resolve("")
+    })
+  })
+}
+

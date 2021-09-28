@@ -259,6 +259,11 @@ algoliasearch@^4.0.0:
     "@algolia/requester-node-http" "4.10.5"
     "@algolia/transporter" "4.10.5"
 
+consola@^2.15.3:
+  version "2.15.3"
+  resolved "https://registry.nlark.com/consola/download/consola-2.15.3.tgz#2e11f98d6a4be71ff72e0bdf07bd23e12cb61550"
+  integrity sha1-LhH5jWpL5x/3LgvfB70j4Sy2FVA=
+
 csstype@^2.6.8:
   version "2.6.18"
   resolved "https://registry.nlark.com/csstype/download/csstype-2.6.18.tgz#980a8b53085f34af313410af064f2bd241784218"

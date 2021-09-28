@@ -8,6 +8,12 @@ yarn new # 创建日总结模板
 # or
 
 yarn new week # 创建周总结模板
+
+# or 生成指定日期的 日-周 模板
+
+yarn new day 0901
+
+yarn new week 0902
 ```
 
 ## TODOS
@@ -15,6 +21,4 @@ yarn new week # 创建周总结模板
 - 创建年、月目标模板
   - `yarn new year`
   - `yarn new month`
-- 创建指定日期的模板： 
-  - `yarn new 0702`
-  - `yarn new 0702 --week`
+
