@@ -1,17 +1,19 @@
 ## TODOS
+> todos 都是短期任务为主，任务周期 1-2周，项目 todo 为3月内
 
-- [Bash 编程学习](https://wangdoc.com/bash/intro.html)
-- 学习资料利用起来：掘金小册，极客时间，拉勾教育
 - [x] 女朋友的模拟面试准备
 - [x] H5 开发经验文档整理，思维导图完善。
-- [x] Bug 复盘总结
-- Nestjs
-- Docker，Nginx，DevOps 学习
-- ahooks 了解常见的使用
-- umijs 背后原理探究
+- [x] [Nestjs基础学习](https://github.com/Jsmond2016/nest-demo)
+- [x] [hooks 背后原理实现，总结常见的容易踩的坑](https://github.com/Jsmond2016/react-hook-source)。
+- [ ] Docker
+- [ ] Nginx
+- [ ] DevOps 学习
+- [ ] ahooks 了解常见的使用
+- [ ] umijs 背后原理探究
 - [Umijs 实战个人简单的后台项目](https://github.com/Jsmond2016/umi-antd-backend)
-- hooks 背后原理实现，总结常见的容易踩的坑。
 - [软考](https://jsmond2016.github.io/study-everyday/record/06/0606-week-summary.html)
+- [Bash 编程学习](https://wangdoc.com/bash/intro.html)
+- 学习资料利用起来：掘金小册，极客时间，拉勾教育
 - React/Vue + Node + DevOps 全栈实战上线运维
 - 按照专题整理自己的知识体系/面试知识体系
   - 按照专题整理对应的知识
@@ -27,6 +29,7 @@
 - 掘金小册的 记账项目，实战并且部署到自己的服务器
 - devops 项目实战，并部署到自己的服务器
 - 掘金小册的 记账项目，整理自己的 react + ts；vue3 + ts 版本
+- 供应链项目，为副业做准备！参考：[Jsmond2016/react-vue-koa](https://github.com/Jsmond2016/react-vue-koa) 都是半成品模板
 ## 阅读计划
 
 **掘金**
@@ -58,6 +61,6 @@
 ## 实战计划
 
 - 全栈项目，分别使用3种后端方式实现
-  - Nodejs
+  - Nestjs
   - Go
   - Java
