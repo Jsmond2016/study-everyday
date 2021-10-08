@@ -70,14 +70,14 @@ const mkdirIfNotExits = (path) => {
 async function writeRoute({ month, todayItem, recordPath, type }) {
   const hasRouteFlag = routes.map(item => item.text).indexOf(month.toString().slice(1) + '月') > -1
   if (!hasRouteFlag) {
-    routes.unshift({ text: month.toString().slice(1) + '月', children: [] })
+    routes.unshift({ text: `${+month}月`, children: [] })
     const bgImgDirPath = path.resolve(recordPath, "bg-imgs")
     const imgsDirPath = path.resolve(recordPath, "imgs")
     fs.mkdirSync(bgImgDirPath)
     fs.mkdirSync(imgsDirPath)
   }
   const newRoutes = routes.map(route => {
-    if (route.text === month.toString().slice(1) + '月') {
+    if (route.text === `${+month}月`) {
       const children = Array.isArray(route.children) ? (route.children.unshift(todayItem), route.children) : [todayItem]
       return {
         ...route,
