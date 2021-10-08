@@ -56,6 +56,7 @@ function getGuideSidebar() {
             { text: 'Docker教程', link: '/record/read-notes/docker-note' }
           ]
         },
+        { text: '10月目标', link: '/record/target-month-10' },
         { text: '8月目标', link: '/record/target-month-8' },
         { text: '7月目标', link: '/record/target-month-7' },
         { text: '6月目标', link: '/record/target-month-6' },
