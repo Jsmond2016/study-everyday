@@ -68,7 +68,7 @@ const mkdirIfNotExits = (path) => {
 
 
 async function writeRoute({ month, todayItem, recordPath, type }) {
-  const hasRouteFlag = routes.map(item => item.text).indexOf(month.toString().slice(1) + '月') > -1
+  const hasRouteFlag = routes.map(item => item.text).indexOf(`${month}月`) > -1
   if (!hasRouteFlag) {
     routes.unshift({ text: `${+month}月`, children: [] })
     const bgImgDirPath = path.resolve(recordPath, "bg-imgs")
