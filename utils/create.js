@@ -4,7 +4,7 @@ const process = require('process')
 const consola = require('consola')
 const filePath = path.resolve(__dirname, '../docs/.vitepress/sidebar.js')
 const routes = require(filePath)
-
+const downLoadImg = require('./craw')
 
 
 start();
@@ -20,6 +20,7 @@ async function start() {
   await writeRoute({ type, dateTime, recordPath, todayItem, month })
   const template = await readFileContent(type, dateTime)
   await createTodayFile({ name: dateTime, data: template, recordPath, type })
+  await downLoadImg(`${recordPath}/bg-imgs`, dateTime)
 }
 
 
