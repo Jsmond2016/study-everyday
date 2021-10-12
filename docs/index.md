@@ -2,6 +2,10 @@
 
 > 这是一个记录每日学习的仓库，灵感来源：[俊劫的每日学习打卡](https://alexwjj.github.io/)
 
+我的其他学习记录：
+
+- [数据结构和算法学习](https://jsmond2016.github.io/leetcode/)
+- [go-study](https://jsmond2016.github.io/go-study/)
 
 **好文推荐**
 
