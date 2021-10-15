@@ -117,7 +117,7 @@
 - [ ] Vite，[学习地址](#)
 - [ ] Servless：[拉勾课程-玩转 Serverless 架构](https://kaiwu.lagou.com/course/courseInfo.htm?courseId=589#/content)
 - [ ] Electron 实战跨端应用（桌面），[学习地址](#)
-- [ ] Nestjs 学习，[学习地址](#)
+- [x] Nestjs 学习，[学习地址](https://github.com/Jsmond2016/nest-demo)
 - [ ] 性能优化，[学习地址](#)
 - [ ] 设计模式，[学习地址](#)
 
