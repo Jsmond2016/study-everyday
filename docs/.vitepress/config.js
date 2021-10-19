@@ -53,7 +53,8 @@ function getGuideSidebar() {
           children: [
             { text: '如何高效学习', link: '/record/read-notes/book-1' },
             { text: '如何做前端技术设计', link: '/record/read-notes/book-2' },
-            { text: 'Docker教程', link: '/record/read-notes/docker-note' }
+            { text: 'Docker教程', link: '/record/read-notes/docker-note' },
+            { text: 'leetcode难度分类', link: '/record/read-notes/leetcode-retag' },
           ]
         },
         { text: '10月目标', link: '/record/target-month-10' },
