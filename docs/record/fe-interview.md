@@ -22,13 +22,45 @@
 
 什么？只写了一遍记不住？给我写 10 遍！！！
 
+-----
+
+## 写在前面
+
+- [写给女朋友的中级前端面试秘籍](https://juejin.cn/post/6844904115428917255)
+
+## CSS 基础
+
+押题部分：
+
+- Flex
+- BFC
+- 移动端布局，vw, rem, dpr 等
+- CSS3 特性
+
+其他部分：
+
+- [高频前端面试题汇总之CSS篇](https://juejin.cn/post/6905539198107942919)
+- [前端面试整理—CSS问题](https://zhuanlan.zhihu.com/p/75937487)
+- [字节跳动最爱考的前端面试题：CSS 基础](https://juejin.cn/post/6936913689115099143)
+
 ## 手写js
 
 - [死磕 36 个 JS 手写题（搞懂后，提升真的大）](https://juejin.cn/post/6946022649768181774)
 - [「中高级前端面试」JavaScript手写代码无敌秘籍](https://juejin.cn/post/6844903809206976520#heading-16)
 
-## CSS 基础
 ## JavaScript 基础&高级
+
+基础：对照 [es6.ruanyifeng](https://es6.ruanyifeng.com/) 学习
+
+押题：
+
+- Set，Map，Promise
+- DefineProperty，Reflect，Proxy
+
+其他：
+
+
+
 ## 框架 Vue&React
 
 - JavaScript 基础源码：[若川的博客](https://lxchuan12.gitee.io/)
@@ -37,6 +69,12 @@
 
 ## 框架 Nodejs
 ## HTTP和网络
+
+
+其他：
+
+- [字节跳动最爱考的前端面试题：计算机网络基础](https://juejin.cn/post/6939691851746279437)
+
 ## 浏览器原理
 ## 性能优化
 ## 前端工程化
