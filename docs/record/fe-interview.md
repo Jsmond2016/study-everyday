@@ -49,16 +49,38 @@
 - [死磕 36 个 JS 手写题（搞懂后，提升真的大）](https://juejin.cn/post/6946022649768181774)
 - [「中高级前端面试」JavaScript手写代码无敌秘籍](https://juejin.cn/post/6844903809206976520#heading-16)
 
-## JavaScript 基础&高级
+## JavaScript 基础 & 高级
 
-基础：对照 [es6.ruanyifeng](https://es6.ruanyifeng.com/) 学习
+基础：
+
+对照 [es6.ruanyifeng](https://es6.ruanyifeng.com/) 学习
 
 押题：
 
 - Set，Map，Promise
 - DefineProperty，Reflect，Proxy
 
-其他：
+进阶：
+
+> [冴羽的博客](https://github.com/mqyqingfeng/Blog)
+
+- JavaScript深入之从原型到原型链
+- JavaScript深入之词法作用域和动态作用域
+- JavaScript深入之执行上下文栈
+- JavaScript深入之变量对象
+- JavaScript深入之作用域链
+- JavaScript深入之从ECMAScript规范解读this
+- JavaScript深入之执行上下文
+- JavaScript深入之闭包
+- JavaScript深入之参数按值传递
+- JavaScript深入之call和apply的模拟实现
+- JavaScript深入之bind的模拟实现
+- JavaScript深入之new的模拟实现
+- JavaScript深入之类数组对象与arguments
+- JavaScript深入之创建对象的多种方式以及优缺点
+- JavaScript深入之继承的多种方式以及优缺点
+- JavaScript深入系列15篇正式完结！
+
 
 
 

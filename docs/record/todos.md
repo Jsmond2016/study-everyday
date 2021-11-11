@@ -1,6 +1,12 @@
 ## TODOS
 > todos 都是短期任务为主，任务周期 1-2周，项目 todo 为3月内
 
+## 紧急 TODO
+
+- 每天算法总结和梳理
+
+## 重要不紧急 TODO
+
 - [x] 女朋友的模拟面试准备
 - [x] H5 开发经验文档整理，思维导图完善。
 - [x] [Nestjs基础学习](https://github.com/Jsmond2016/nest-demo)
@@ -64,3 +70,6 @@
   - Nestjs
   - Go
   - Java
+
+
+
