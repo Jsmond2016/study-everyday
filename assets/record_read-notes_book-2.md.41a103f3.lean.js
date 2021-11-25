@@ -1,0 +1,1 @@
+import{_ as l,c as i,o as e,a as r}from"./app.97c1f4fd.js";const h='{"title":"\u5982\u4F55\u505A\u524D\u7AEF\u6280\u672F\u8BBE\u8BA1","description":"","frontmatter":{},"relativePath":"record/read-notes/book-2.md","lastUpdated":1637852360601}',t={},a=r('',4),o=[a];function n(s,u,c,_,p,d){return e(),i("div",null,o)}var k=l(t,[["render",n]]);export{h as __pageData,k as default};
