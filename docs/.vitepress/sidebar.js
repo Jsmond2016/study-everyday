@@ -3,12 +3,20 @@ module.exports = [
     "text": "11月",
     "children": [
       {
+        "text": "1130",
+        "link": "/record/11/1130"
+      },
+      {
         "text": "1129",
         "link": "/record/11/1129"
       },
       {
         "text": "1128",
         "link": "/record/11/1128"
+      },
+      {
+        "text": "1127-周总结",
+        "link": "/record/11/1127-week-summary"
       },
       {
         "text": "1125",
@@ -44,7 +52,7 @@ module.exports = [
       },
       {
         "text": "1113-周总结",
-        "link": "/record/11/1113"
+        "link": "/record/11/1113-week-summary"
       },
       {
         "text": "1112",
