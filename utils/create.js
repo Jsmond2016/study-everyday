@@ -20,7 +20,9 @@ async function start() {
   await writeRoute({ type, dateTime, recordPath, todayItem, month })
   const template = await readFileContent(type, dateTime)
   await createTodayFile({ name: dateTime, data: template, recordPath, type })
-  await downLoadImg(`${recordPath}/bg-imgs`, dateTime)
+  const imgPath = `${recordPath}/bg-imgs`
+  // mkdirIfNotExits(imgPath)
+  await downLoadImg(imgPath, dateTime)
 }
 
 
@@ -41,14 +43,14 @@ function init() {
 
   const type = modeMap[params[0]] || 'day'
   const dateTime = params[1] || `${month}${day}`
-
-  const recordPath = path.resolve(__dirname, '../docs/record', month.toString())
+  const monthPath = dateTime.slice(0, 2)
+  const recordPath = path.resolve(__dirname, '../docs/record', monthPath)
 
   const fileName = type === 'day' ? dateTime : `${dateTime}-week-summary`
 
   const todayItem = {
     text: type === 'day' ? dateTime : dateTime + '-周总结',
-    link: `/record/${month}/${fileName}`
+    link: `/record/${monthPath}/${fileName}`
   }
 
   return {
@@ -56,11 +58,11 @@ function init() {
     dateTime,
     recordPath,
     todayItem,
-    month
+    month: monthPath
   }
 }
 
-const mkdirIfNotExits = (path) => {
+function mkdirIfNotExits (path) {
   const flag = fs.existsSync(path)
   if (!flag) {
     fs.mkdirSync(path)
@@ -72,10 +74,12 @@ async function writeRoute({ month, todayItem, recordPath, type }) {
   const hasRouteFlag = routes.map(item => item.text).indexOf(`${month}月`) > -1
   if (!hasRouteFlag) {
     routes.unshift({ text: `${+month}月`, children: [] })
+    const dirPath = path.resolve(recordPath)
     const bgImgDirPath = path.resolve(recordPath, "bg-imgs")
     const imgsDirPath = path.resolve(recordPath, "imgs")
-    fs.mkdirSync(bgImgDirPath)
-    fs.mkdirSync(imgsDirPath)
+    mkdirIfNotExits(dirPath)
+    mkdirIfNotExits(bgImgDirPath)
+    mkdirIfNotExits(imgsDirPath)
   }
   const newRoutes = routes.map(route => {
     if (route.text === `${+month}月`) {
