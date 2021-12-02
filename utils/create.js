@@ -124,9 +124,9 @@ function mkdirIfNotExists(path) {
   consola.info("<<==文件夹已存在==>>")
 }
 
-function mkFileIfNotExists(path, data, tipMsg) {
+function mkFileIfNotExists(path, data, tipMsg, forceFlag = false) {
   const flag = fs.existsSync(path)
-  if (!flag) {
+  if (!flag || forceFlag) {
     fs.writeFile(path, data, (error) => {
       if (!error) {
         consola.success(tipMsg + '==写入成功:   ' + path)
@@ -136,7 +136,7 @@ function mkFileIfNotExists(path, data, tipMsg) {
     })
     return
   }
-  consola.info("<<==文件已存在==>>")
+  consola.info("<<=="+ tipMsg +"文件已存在==>>")
 }
 
 
@@ -167,13 +167,13 @@ async function writeRoute({ month, routeItem, fileMonthDirPath, tipMsg }) {
       return route
     }
   })
-  fs.stat(sidebarPath, async (err, stats) => {
+  fs.stat(sidebarPath, (err) => {
     if (err) {
       consola.info(err)
       return
     }
     const data = `module.exports = ${JSON.stringify(newRoutes, null, 2)}`
-    mkFileIfNotExists(sidebarPath, data, tipMsg)
+    mkFileIfNotExists(sidebarPath, data, tipMsg, true)
   })
 }
 
