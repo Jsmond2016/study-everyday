@@ -43,7 +43,7 @@ async function start() {
 
   await writeRoute({ month, routeItem, fileMonthDirPath, tipMsg: modeToRouteMessage[mode] })
   const template = await readFileContent(mode, dateTime)
-  await createTodayFile({ name: fileName, data: template, filePath, tipMsg: modeToTplMessage[mode] })
+  await createTodayFile({ name: fileName, data: template, filePath, fileMonthDirPath, tipMsg: modeToTplMessage[mode] })
   const imgPath = `${fileMonthDirPath}/bg-imgs`
   await downLoadImg(imgPath, dateTime)
 }
@@ -115,24 +115,46 @@ function getTplInfo(mode, dateStr) {
 }
 
 
-function mkdirIfNotExits(path) {
+function mkdirIfNotExists(path) {
   const flag = fs.existsSync(path)
   if (!flag) {
     fs.mkdirSync(path)
+    return
   }
+  consola.info("<<==文件夹已存在==>>")
+}
+
+function mkFileIfNotExists(path, data, tipMsg) {
+  const flag = fs.existsSync(path)
+  if (!flag) {
+    fs.writeFile(path, data, (error) => {
+      if (!error) {
+        consola.success(tipMsg + '==写入成功:   ' + path)
+      } else {
+        consola.error(tipMsg + '==写入失败')
+      }
+    })
+    return
+  }
+  consola.info("<<==文件已存在==>>")
 }
 
 
 async function writeRoute({ month, routeItem, fileMonthDirPath, tipMsg }) {
-  const hasRouteFlag = routes.map(item => item.text).indexOf(`${month}月`) > -1
-  if (!hasRouteFlag) {
+  const hasMonthRouteFlag = routes.map(item => item.text).indexOf(`${month}月`) > -1
+  const hasDayRouteFlag = routes.some(month => month.children.some(day => day.text === routeItem.text))
+  if (hasDayRouteFlag) {
+    consola.info("<<==" + tipMsg + '已存在: ==>>')
+    return
+  }
+  if (!hasMonthRouteFlag) {
     routes.unshift({ text: `${+month}月`, children: [] })
     const dirPath = path.resolve(fileMonthDirPath)
     const bgImgDirPath = path.resolve(fileMonthDirPath, "bg-imgs")
     const imgsDirPath = path.resolve(fileMonthDirPath, "imgs")
-    mkdirIfNotExits(dirPath)
-    mkdirIfNotExits(bgImgDirPath)
-    mkdirIfNotExits(imgsDirPath)
+    mkdirIfNotExists(dirPath)
+    mkdirIfNotExists(bgImgDirPath)
+    mkdirIfNotExists(imgsDirPath)
   }
   const newRoutes = routes.map(route => {
     if (route.text === `${+month}月`) {
@@ -150,33 +172,20 @@ async function writeRoute({ month, routeItem, fileMonthDirPath, tipMsg }) {
       consola.info(err)
       return
     }
-    fs.writeFile(sidebarPath, `module.exports = ${JSON.stringify(newRoutes, null, 2)}`, (error) => {
-      if (!error) {
-        consola.success(tipMsg + '==写入成功:   ' + sidebarPath)
-      } else {
-        consola.error(tipMsg + '==写入失败')
-      }
-    })
+    const data = `module.exports = ${JSON.stringify(newRoutes, null, 2)}`
+    mkFileIfNotExists(sidebarPath, data, tipMsg)
   })
 }
 
-async function createTodayFile({ name, data, filePath, tipMsg }) {
-  const writeFileAction = (name, data) => {
-    fs.writeFile(`${filePath}.md`, data, (error) => {
-      if (!error) {
-        consola.success(tipMsg + '==写入成功:  ' + filePath + '.md')
-      } else {
-        consola.error(tipMsg + '==写入失败')
-      }
-    })
-  }
-  await mkdirIfNotExits(filePath)
-  fs.stat(filePath, async (err, stats) => {
+async function createTodayFile({ data, filePath, fileMonthDirPath, tipMsg }) {
+  await mkdirIfNotExists(fileMonthDirPath)
+  fs.stat(fileMonthDirPath, async (err, stats) => {
     if (err) {
-      consola.err('error===')
+      consola.error('error===')
       return
     }
-    writeFileAction(name, data)
+    const dayFilePath = `${filePath}.md`
+    mkFileIfNotExists(dayFilePath, data, tipMsg)
   })
 }
 
