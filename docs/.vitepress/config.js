@@ -48,6 +48,7 @@ function getGuideSidebar() {
         { text: '模板', link: '/record/template' },
         { text: 'TODOS', link: '/record/todos' },
         { text: '面试冲刺', link: '/record/fe-interview' },
+        { text: '手写js', link: '/record/hand-js' },
         {
           text: '随笔文章',
           children: [
