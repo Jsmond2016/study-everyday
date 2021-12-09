@@ -121,7 +121,7 @@ function mkdirIfNotExists(path) {
     fs.mkdirSync(path)
     return
   }
-  consola.info("<<==文件夹已存在==>>")
+  consola.info(`<<==文件夹 ${path} 已存在==>>`)
 }
 
 function mkFileIfNotExists(path, data, tipMsg, forceFlag = false) {
