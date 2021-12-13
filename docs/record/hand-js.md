@@ -381,3 +381,125 @@ const compose = (...fns) => (...args) => fns.reduceRight((res, fn) => [fn.call(n
 
 
 ```
+
+## 利用 mouse 事件写一个可拖拽的 div
+
+日报 1209#
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style type="text/css">
+    div {
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+  }
+
+*{margin:0; padding: 0;}
+  </style>
+</head>
+<body>
+<div id="xxx"></div>
+
+<script>
+  var dragging = false
+  var position = null
+
+  xxx.addEventListener('mousedown',function(e){
+    dragging = true
+    position = [e.clientX, e.clientY]
+  })
+
+  document.addEventListener('mousemove', function(e){
+    if(dragging === false){return}
+    console.log('hi')
+    const [x, y] = [e.clientX, e.clientY]
+    const [originX, originY] = position || [0, 0]
+    const [deltaX, deltaY] = [x - originX, y - originY]
+    const [left, top] = [parseInt(xxx.style.left || 0), parseInt(xxx.style.top || 0)]
+    xxx.style.left = left + deltaX + 'px'
+    xxx.style.top = top + deltaY + 'px'
+    position = [x, y]
+  })
+  document.addEventListener('mouseup', function(e){
+    dragging = false
+  })
+</script>
+
+</body>
+</html>
+```
+
+- [演示demo](https://jsbin.com/xacuceholu/edit?js,output)
+
+
+## query 参数解析成对象
+
+日报 1210#
+
+```js
+// input
+// https://www.baidu.com/s?name=tom&age=12
+
+const url1 = 'https://www.baidu.com/s?name=tom&age=12'
+
+const transformQuery = (url) => {
+  const _url = new URL(url)
+  return Object.fromEntries(new URLSearchParams(_url.search))
+}
+
+transformQuery(url1)
+// { name: 'tom', age: '12' }
+
+
+// or 
+
+const url1 = 'https://www.baidu.com/s?name=tom&age=12'
+
+const transformQuery = (url) => {
+  const search = url.split("?")[1]
+  let res = {}
+  search.split("&").forEach(item => {
+      const [key, name] = item.split("=")
+      res[key] = name
+  })
+
+  // or
+  // return search.split("&").reduce((pre, cur) => (pre[cur.split('=')[0]] = cur.split('=')[1], pre), {})
+  return res
+}
+
+transformQuery(url1)
+
+```
+
+## 冒泡算法
+
+日报 1211#
+
+```js
+const array = [5,4,3,2,1,8]
+
+function bubble (arr = []) {
+  for (let i = 0; i < arr.length - 1; i++ ) {
+    for (let m = 0; m < arr.length - 1 - i; m ++) {
+      if (arr[m] > arr [m+1]) {
+        const temp = arr[m]
+        arr[m] = arr[m+1]
+        arr[m+1] = temp
+      }
+    }
+  }
+  return arr
+}
+console.log(bubble(array)) // [ 1, 2, 3, 4, 5, 8 ]
+
+```
