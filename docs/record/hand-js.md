@@ -481,9 +481,14 @@ transformQuery(url1)
 
 ```
 
-## 冒泡算法
+## 选择/快速/冒泡排序算法
 
 日报 1211#
+
+
+冒泡排序算法
+
+平均时间复杂度O(n²)
 
 ```js
 const array = [5,4,3,2,1,8]
@@ -502,4 +507,105 @@ function bubble (arr = []) {
 }
 console.log(bubble(array)) // [ 1, 2, 3, 4, 5, 8 ]
 
+```
+
+选择排序
+
+算法复杂度：O(n²)
+
+```js
+function selectionSort(arr) {
+    var len = arr.length;
+    var minIndex, temp;
+    for (var i = 0; i < len - 1; i++) {
+        minIndex = i;
+        for (var j = i + 1; j < len; j++) {
+            if (arr[j] < arr[minIndex]) {     // 寻找最小的数
+                minIndex = j;                 // 将最小数的索引保存
+            }
+        }
+        temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
+    }
+    return arr;
+}
+
+
+selectionSort([5,4,3,2,1,8]) // [1, 2, 3, 4, 5, 8]
+```
+
+快速排序
+
+```js
+function quickSort(arr, l = 0, r = arr.length -1) {
+    if (l < r) {
+        let i, j, x;
+        i = l,
+        j = r,
+        x = arr[i];
+        while (i < j) {
+            while (i < j && arr[j] > x) {
+                j-- // 从右向左找第一个小于x的数
+            }
+            if (i < j) {
+                arr[i ++] = arr[j]
+            }
+            while (i < j && arr[i] < x) {
+                i++ // 从左向右找第一个大于x的数
+            }
+            if (i < j) {
+                arr[j--] = arr[i]
+            }
+        }
+        arr[i] = x;
+        quickSort(arr, l, i-1) // 递归
+        quickSort(arr, i+1, r) // 递归
+    }
+    return arr
+}
+
+quickSort([5,4,3,2,1,8])
+```
+
+## 手写懒加载
+
+日报1219#
+
+```html
+<body>
+    <div data-v-b2db8566="" 
+         data-v-009ea7bb="" 
+         data-v-6b46a625=""   
+         data-src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/9/27/16619f449ee24252~tplv-t2oaga2asx-image.image" 
+         class="lazy thumb thumb"    
+         style="background-image: none; background-size: cover;"
+         >  
+    </div>
+</body>
+
+
+<script>
+    // 获取所有的图片标签
+    const imgs = document.getElementsByTagName('img')
+    // 获取可视区域的高度
+    const viewHeight = window.innerHeight || document.documentElement.clientHeight
+    // num用于统计当前显示到了哪一张图片，避免每次都从第一张图片开始检查是否露出
+    let num = 0
+    function lazyload(){
+        for(let i=num; i<imgs.length; i++) {
+            // 用可视区域高度减去元素顶部距离可视区域顶部的高度
+            let distance = viewHeight - imgs[i].getBoundingClientRect().top
+            // 如果可视区域高度大于等于元素顶部距离可视区域顶部的高度，说明元素露出
+            if(distance >= 0 ){
+                // 给元素写入真实的src，展示图片
+                imgs[i].src = imgs[i].getAttribute('data-src')
+                // 前i张图片已经加载完毕，下次从第i+1张开始检查是否露出
+                num = i + 1
+            }
+        }
+    }
+    // 监听Scroll事件
+    window.addEventListener('scroll', lazyload, false);
+</script>
 ```
