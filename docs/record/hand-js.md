@@ -677,3 +677,86 @@ const tb2 = _new(Person, 'Chen', 'Tianbao');
 console.log(tb2)
 
 ```
+
+## 手写 call/apply/bind
+
+
+- call
+
+
+```js
+Function.prototype.myCall = function(context, ...args) { // 解构context 与arguments
+   if(typeof this !== 'function') { // this 必须是函数
+     throw new TypeError(`It's must be a function`)
+   }
+   if(!context) context = window; // 没有context，或者传递的是 null undefined，则重置为window
+   const fn = Symbol(); // 指定唯一属性，防止 delete 删除错误
+   context[fn] = this; // 将 this 添加到 context的属性上
+   const result = context[fn](...args); // 直接调用context 的 fn
+   delete context[fn]; // 删除掉context新增的symbol属性
+   return result; // 返回返回值
+}
+
+
+// 示例
+const obj = {a: 1}
+function foo(b) {
+    console.log(this.a, b);
+    return this.a + b
+}
+foo.myCall(obj, 2)
+// 1 2 
+// 3
+```
+
+拓展：[symbol 学习](https://coder.itclan.cn/fontend/js/understand-symbol) 了解 symbol 常用 API 和基本用途
+
+
+- apply
+
+
+```js
+Function.prototype.myApply = function(context, args = []) { // 解构方式
+   if(typeof this !== 'function') {
+     throw new TypeError(`It's must be a function`)
+   }
+   if(!context) context = window;
+   const fn = Symbol();
+   context[fn] = this;
+   const result = context[fn](...args);
+   delete context[fn];
+   return result;
+}
+
+// 示例
+const arr = [1,2,6,4,5]
+Math.min.myApply(null, arr)
+Math.max.myApply(null, arr)
+
+```
+
+
+- bind
+
+```js
+Function.prototype.myBind = function (context, ...args) {
+  const fn = this;
+  if(typeof fn !== 'function'){
+      throw new TypeError('It must be a function');
+  }
+  if(!context) context = window;
+  return function (...otherArgs) {
+    return fn.apply(context, [...args, ...otherArgs]);
+  };
+};
+
+
+// 示例
+const bar  = {a: 1}
+function foo(b, c) {
+    console.log(this.a, b, c)
+}
+const fn = foo.myBind(bar, 2)
+fn(3,4)
+// 1  2  3
+```
