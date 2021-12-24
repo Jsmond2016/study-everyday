@@ -1,11 +1,11 @@
 
-# ${dateTime} 今日总结
+# ${dateTime}
 
 ![](./bg-imgs/${dateTime}.jpg)
 
 
-## 今日计划
-> 每天工作前/前一天晚上 做好计划：重点工作、自我提升、其他
+## ${dateTime} 今日计划
+> 每天工作前/前一天晚上 做好计划：重点工作、自我提升、其他，[提交地址](https://github.com/cuixiaorui/study-every-day/issues)
 
 **重点工作**
 
