@@ -11,7 +11,7 @@
     "serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vitepress": "^0.20.1"
+    "vitepress": "^0.20.9"
   },
   "dependencies": {
     "axios": "^0.24.0",
