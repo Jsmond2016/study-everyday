@@ -820,3 +820,37 @@ scheduler.start()
 // 1200ms时，4完成，输出4
 
 ```
+
+## 使用 setTmeout 模拟 setInterval
+
+使用 setTmeout 模拟 setInterval
+
+
+看看 使用 setInterval 的例子；
+
+```js
+let timer = setInterval(() => {
+  count ++
+  console.log(count)
+  if (count === 10) {
+    clearInterval(timer)
+  }
+}, 1000);
+```
+
+接下来使用 setTimeout 来模拟实现：
+
+```js
+let count = 0
+
+let timer = setTimeout(function run() {
+  count ++
+  console.log(count)
+  if (count === 10) {
+    clearInterval(timer)
+    return
+  }
+  timer = setTimeout(run, 1000);
+}, 1000);
+
+```
