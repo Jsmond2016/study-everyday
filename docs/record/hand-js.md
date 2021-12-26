@@ -854,3 +854,18 @@ let timer = setTimeout(function run() {
 }, 1000);
 
 ```
+
+## 驼峰命名和下划线命名互换
+
+```js
+const toLine = (str) => str.replace(/\B([A-Z])/g, '_$1').toLowerCase()
+
+// toLine('GetElementById')
+// 'get_element_by_id'
+
+const toHump = (str) => str.replace(/\_(\w)/g, (all, letter) => letter.toUpperCase())
+
+// toHump('get_element_by_id')
+// 'getElementById'
+
+```
