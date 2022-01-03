@@ -2,7 +2,7 @@ const path = require('path')
 const fs = require('fs')
 const process = require('process')
 const consola = require('consola')
-const sidebarPath = path.resolve(__dirname, '../docs/.vitepress/sidebar.js')
+const sidebarPath = path.resolve(__dirname, '../docs/.vuepress/sidebar.js')
 const routes = require(sidebarPath)
 const downLoadImg = require('./craw')
 const modeMap = {
@@ -45,6 +45,7 @@ async function start() {
   const template = await readFileContent(mode, dateTime)
   await createTodayFile({ name: fileName, data: template, filePath, fileMonthDirPath, tipMsg: modeToTplMessage[mode] })
   const imgPath = `${fileMonthDirPath}/bg-imgs`
+  await mkdirIfNotExists(imgPath);
   await downLoadImg(imgPath, dateTime)
 }
 
@@ -80,7 +81,7 @@ function getModeRouteName(mode, dateTime) {
 
 function getDayTime(dateStr) {
   const today = new Date()
-  let [month, day] = [today.getMonth(), today.getDate()]
+  let [month, day, year] = [today.getMonth(), today.getDate(), today.getFullYear()]
   month = (month += 1, month < 10 ? month.toString().padStart(2, '0') : month)
   day = day < 10 ? day.toString().padStart(2, '0') : day
   const dateTime = dateStr || `${month}${day}`
@@ -88,18 +89,19 @@ function getDayTime(dateStr) {
   return {
     dateTime,
     monthStr,
-    dayStr: day
+    dayStr: day,
+    year
   }
 }
 
 function getTplInfo(mode, dateStr) {
-  const { monthStr, dateTime } = getDayTime(dateStr)
+  const { monthStr, dateTime, year } = getDayTime(dateStr)
   const fileName = getModeToFileName(mode, dateTime)
-  const filePath = path.resolve(__dirname, '../docs/record', monthStr, fileName)
-  const fileMonthDirPath = path.resolve(__dirname, '../docs/record', monthStr)
+  const filePath = path.resolve(__dirname, `../docs/record-${year}`, monthStr, fileName)
+  const fileMonthDirPath = path.resolve(__dirname, `../docs/record-${year}`, monthStr)
   const routeItem = {
     text: dateTime,
-    link: `/record/${monthStr}/${fileName}`
+    link: `/record-${year}/${monthStr}/${fileName}`
   }
 
   return {
