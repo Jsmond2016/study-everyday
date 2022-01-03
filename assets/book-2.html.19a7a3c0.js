@@ -1,0 +1,1 @@
+const t={key:"v-1982b700",path:"/basic/read-notes/book-2.html",title:"\u5982\u4F55\u505A\u524D\u7AEF\u6280\u672F\u8BBE\u8BA1",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1641201286e3,contributors:[{name:"Jsmond2016",email:"Jsmond2016@gmail.com",commits:1}]},filePathRelative:"basic/read-notes/book-2.md"};export{t as data};

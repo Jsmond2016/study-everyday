@@ -1,1 +1,0 @@
-const e={key:"v-56679ee0",path:"/record/10/1010.html",title:"1010",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u4ECA\u65E5\u7B97\u6CD5",slug:"\u4ECA\u65E5\u7B97\u6CD5",children:[]}],git:{updatedTime:1633925631e3,contributors:[{name:"jsmond2016",email:"jsmond2016@gmail.com",commits:1}]},filePathRelative:"record/10/1010.md"};export{e as data};
