@@ -1,4 +1,4 @@
-// const taskLists = require('markdown-it-task-lists');
+const taskLists = require('markdown-it-task-lists');
 const archive2021Sidebar = require('./sidebar.archive-2021');
 
 module.exports = {
@@ -17,12 +17,14 @@ module.exports = {
     sidebar: getGuideSidebar(),
   },
   // markdown: {
-  //   extendsMarkdown: (md) => {
-  //     console.log('md: ', md);
+  //   extendMarkdown: (md) => {
   //     // use more markdown-it plugins!
   //     md.use(taskLists)
   //   }
   // }
+  extendsMarkdown: (md) => {
+    md.use(taskLists)
+  }
 }
 
 function getGuideSidebar() {
