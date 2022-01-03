@@ -5,13 +5,12 @@
   "homepage": "https://jsmond2016.github.io/study-everyday",
   "license": "MIT",
   "scripts": {
-    "dev": "vitepress dev docs",
+    "dev": "vuepress dev docs",
     "new": "node ./utils/create.js",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "build": "vuepress build docs"
   },
   "devDependencies": {
-    "vitepress": "^0.20.9"
+    "vuepress": "^2.0.0-beta.32"
   },
   "dependencies": {
     "axios": "^0.24.0",
