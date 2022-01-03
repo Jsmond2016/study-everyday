@@ -1,0 +1,1 @@
+const t={key:"v-728ff343",path:"/record-2022/target-month-1.html",title:"1\u6708\u76EE\u6807",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1641224605e3,contributors:[{name:"Jsmond2016",email:"Jsmond2016@gmail.com",commits:1}]},filePathRelative:"record-2022/target-month-1.md"};export{t as data};
