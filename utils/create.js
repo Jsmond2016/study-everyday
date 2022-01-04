@@ -143,7 +143,8 @@ function mkFileIfNotExists(path, data, tipMsg, forceFlag = false) {
 
 
 async function writeRoute({ month, routeItem, fileMonthDirPath, tipMsg }) {
-  const hasMonthRouteFlag = routes.map(item => item.text).indexOf(`${month}月`) > -1
+  const months = routes.map(item => item.text.slice(0, -1)).map(Number)
+  const hasMonthRouteFlag = months.indexOf(+month) > -1  
   const hasDayRouteFlag = routes.some(month => month.children.some(day => day.text === routeItem.text))
   if (hasDayRouteFlag) {
     consola.info("<<==" + tipMsg + '已存在: ==>>')
