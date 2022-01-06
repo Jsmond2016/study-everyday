@@ -28,8 +28,8 @@ module.exports = [
         "link": "/record-2021/12/1227"
       },
       {
-        "text": "1226",
-        "link": "/record-2021/12/1226"
+        "text": "1226-周总结",
+        "link": "/record-2021/12/1226-week-summary"
       },
       {
         "text": "1224",
@@ -104,7 +104,7 @@ module.exports = [
         "link": "/record-2021/12/1206"
       },
       {
-        "text": "1205",
+        "text": "1205-周总结",
         "link": "/record-2021/12/1205-week-summary"
       },
       {
