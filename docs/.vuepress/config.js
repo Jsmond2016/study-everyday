@@ -14,7 +14,10 @@ module.exports = {
     editLinks: true,
     editLinkText: '编辑本页',
     lastUpdated: '最后更新时间',
-    nav: [],
+    displayAllHeaders: true,
+    //TODO:  nav: [
+    //   { text: 'vuepress', link: 'https://vuepress.vuejs.org/zh/' }
+    // ],
     sidebar: getGuideSidebar(),
   },
   // markdown: {
@@ -37,6 +40,7 @@ function getGuideSidebar() {
         {
           text: '随笔文章',
           children: [
+            { text: 'js toFixed 四舍五入问题', link: '/basic/read-notes/js-to-fixed', sidebarDepth: 1, },
             { text: '如何高效学习', link: '/basic/read-notes/book-1' },
             { text: '如何做前端技术设计', link: '/basic/read-notes/book-2' },
             { text: 'Docker教程', link: '/basic/read-notes/docker-note' },
