@@ -59,5 +59,3 @@ async function downloadFiles(url, dirPath, imgName) {
 //-----------导出-------
 
 module.exports = getBingImg
-
-// crawBingImgs()
