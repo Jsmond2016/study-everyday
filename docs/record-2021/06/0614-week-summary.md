@@ -1,7 +1,7 @@
 
 # 0614 本周总结
 
-![](./bg-imgs/0614.jpg)
+![](http://h2.ioliu.cn/bing/WinterBison_ZH-CN0120689382_1920x1080.jpg)
 
 ## 问题盘点
 

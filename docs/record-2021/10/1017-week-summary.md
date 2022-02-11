@@ -1,7 +1,7 @@
 
 # 1017 本周总结
 
-![](./bg-imgs/1017.jpg)
+![](http://h2.ioliu.cn/bing/HuayMaeKhamin_ZH-CN2718383027_1920x1080.jpg)
 
 ## 拓展和学习
 

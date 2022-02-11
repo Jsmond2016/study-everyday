@@ -1,7 +1,7 @@
 
 # 0711 本周总结
 
-![](./bg-imgs/0711.jpg)
+![](http://h2.ioliu.cn/bing/SantaJusta_ZH-CN0849826455_1920x1080.jpg)
 
 ## 问题盘点
 

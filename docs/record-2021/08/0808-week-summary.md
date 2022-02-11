@@ -1,7 +1,7 @@
 
 # 0808 本周总结
 
-![](./bg-imgs/0808.jpg)
+![](http://h2.ioliu.cn/bing/Invergarry_ZH-CN9013535988_1920x1080.jpg)
 
 ## 问题盘点
 

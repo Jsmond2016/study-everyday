@@ -1,7 +1,7 @@
 
 # 1113-本周总结
 
-![](./bg-imgs/1113.jpg)
+![](http://h2.ioliu.cn/bing/Firefox_ZH-CN0575885603_1920x1080.jpg)
 
 
 ## 问题盘点

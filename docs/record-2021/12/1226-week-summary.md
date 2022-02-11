@@ -1,7 +1,7 @@
 
 # 1226-周总结
 
-![](./bg-imgs/1226.jpg)
+![](http://h2.ioliu.cn/bing/UbehebeCrater_ZH-CN0157876978_1920x1080.jpg)
 
 ## 问题盘点/学习总结
 

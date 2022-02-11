@@ -1,7 +1,7 @@
 
 # 0606 本周总结
 
-![](./bg-imgs/0606.jpg)
+![](http://h2.ioliu.cn/bing/SaCalobra_ZH-CN0945855556_1920x1080.jpg)
 
 ## 问题盘点
 

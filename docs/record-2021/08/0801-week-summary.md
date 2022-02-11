@@ -1,7 +1,7 @@
 
 # 0801 本周总结
 
-![](./bg-imgs/0801.jpg)
+![](http://h2.ioliu.cn/bing/ElanValley_ZH-CN9533069637_1920x1080.jpg)
 
 ## 问题盘点
 

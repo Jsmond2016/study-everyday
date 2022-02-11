@@ -1,7 +1,7 @@
 
 # 0905 本周总结
 
-![](./bg-imgs/0905.jpg)
+![](http://h2.ioliu.cn/bing/MoonJellyDay_ZH-CN4121466496_1920x1080.jpg)
 
 ## 问题盘点
 

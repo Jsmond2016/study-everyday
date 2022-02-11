@@ -1,7 +1,7 @@
 
 # 0620 本周总结
 
-![](./bg-imgs/0620.jpg)
+![](http://h2.ioliu.cn/bing/LickObservatory_ZH-CN9676762110_1920x1080.jpg)
 
 ## 问题盘点
 

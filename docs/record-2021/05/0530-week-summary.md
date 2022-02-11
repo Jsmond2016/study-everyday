@@ -1,7 +1,7 @@
 
 # 0530 本周总结
 
-![](./bg-imgs/0530.jpg)
+![](http://h2.ioliu.cn/bing/GrahamAdelie_ZH-CN2945763969_1920x1080.jpg)
 
 ## 问题盘点
 

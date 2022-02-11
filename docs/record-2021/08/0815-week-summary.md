@@ -1,7 +1,7 @@
 
 # 0815 本周总结
 
-![](./bg-imgs/0815.jpg)
+![](http://h2.ioliu.cn/bing/HogwartsExpress_ZH-CN2774508923_1920x1080.jpg)
 
 ## 问题盘点
 

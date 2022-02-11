@@ -1,7 +1,7 @@
 
 # 0704 本周总结
 
-![](./bg-imgs/0704.jpg)
+![](http://h2.ioliu.cn/bing/SiberianSunset_ZH-CN5711093662_1920x1080.jpg)
 
 ## 问题盘点
 

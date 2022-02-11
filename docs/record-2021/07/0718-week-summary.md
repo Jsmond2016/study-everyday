@@ -1,7 +1,7 @@
 
 # 0718 本周总结
 
-![](./bg-imgs/0718.jpg)
+![](http://h2.ioliu.cn/bing/GlowWormBMNP_ZH-CN9173680006_1920x1080.jpg)
 
 ## 问题盘点
 

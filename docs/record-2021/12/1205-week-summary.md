@@ -1,7 +1,7 @@
 
 # 1205 本周总结
 
-![](./bg-imgs/1205.jpg)
+![](http://h2.ioliu.cn/bing/PortoFlavia_ZH-CN0573894597_1920x1080.jpg)
 
 ## 问题盘点/学习总结
 

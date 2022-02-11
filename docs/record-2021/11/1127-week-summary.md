@@ -1,7 +1,7 @@
 
 # 1127 本周总结
 
-![](./bg-imgs/1123.jpg)
+![](http://h2.ioliu.cn/bing/SanJuanIslands_ZH-CN3763036819_1920x1080.jpg)
 
 ## 问题盘点
 

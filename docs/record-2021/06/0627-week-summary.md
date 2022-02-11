@@ -1,7 +1,7 @@
 
 # 0627 本周总结
 
-![](./bg-imgs/0627.jpg)
+![](http://h2.ioliu.cn/bing/KjellHenriksen_ZH-CN6626275076_1920x1080.jpg)
 
 ## 问题盘点
 
