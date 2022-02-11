@@ -3,7 +3,7 @@ var cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path')
 const consola = require('consola')
-const imgData = fs.readFileSync('./data.json', { encoding: 'utf8'})
+const imgData = JSON.parse(fs.readFileSync('./data.json', { encoding: 'utf8'}));
 
 // 爬取数据
 // const pageUrls = new Array(100).fill(0).map((_, index) => request.get(`https://bing.ioliu.cn/?p=${index + 1}`));
@@ -42,6 +42,7 @@ const imgData = fs.readFileSync('./data.json', { encoding: 'utf8'})
     let content = fs.readFileSync(item, { encoding: 'utf8'});
     if (content.match(/\!\[\]\(\.\/bg-imgs\/\d+\.jpg\)/)) {
       console.log(`${item} 含有图片`);
+      console.log('${imgData[index]}: ', imgData[index]);
       content = content.replace(/\!\[\]\(\.\/bg-imgs\/\d+\.jpg\)/, `![](${imgData[index]})`)
       fs.writeFileSync(`./${item}`, content, { encoding: 'utf8'});
       console.log(`${item} 替换完成`);
