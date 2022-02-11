@@ -4,7 +4,7 @@ const process = require('process')
 const consola = require('consola')
 const sidebarPath = path.resolve(__dirname, '../docs/.vuepress/sidebar.js')
 const routes = require(sidebarPath)
-const downLoadImg = require('./craw')
+const getBingImg = require('./craw')
 const modeMap = {
   week: 'week',
   day: 'day',
@@ -42,11 +42,9 @@ async function start() {
   } = getTplInfo(mode, dateStr)
 
   await writeRoute({ month, routeItem, fileMonthDirPath, tipMsg: modeToRouteMessage[mode] })
-  const template = await readFileContent(mode, dateTime)
+  const bgImgPath = await getBingImg();
+  const template = await readFileContent(mode, bgImgPath)
   await createTodayFile({ name: fileName, data: template, filePath, fileMonthDirPath, tipMsg: modeToTplMessage[mode] })
-  const imgPath = `${fileMonthDirPath}/bg-imgs`
-  await mkdirIfNotExists(imgPath);
-  await downLoadImg(imgPath, dateTime)
 }
 
 
@@ -153,10 +151,8 @@ async function writeRoute({ month, routeItem, fileMonthDirPath, tipMsg }) {
   if (!hasMonthRouteFlag) {
     routes.unshift({ text: `${+month}月`, children: [] })
     const dirPath = path.resolve(fileMonthDirPath)
-    const bgImgDirPath = path.resolve(fileMonthDirPath, "bg-imgs")
     const imgsDirPath = path.resolve(fileMonthDirPath, "imgs")
     mkdirIfNotExists(dirPath)
-    mkdirIfNotExists(bgImgDirPath)
     mkdirIfNotExists(imgsDirPath)
   }
   const newRoutes = routes.map(route => {
@@ -192,12 +188,12 @@ async function createTodayFile({ data, filePath, fileMonthDirPath, tipMsg }) {
   })
 }
 
-function readFileContent(fileName, title) {
+function readFileContent(fileName, bgImgPath) {
   return new Promise((resolve) => {
     const pathUrl = path.resolve(__dirname, 'templates', `${fileName}.md`)
     fs.readFile(pathUrl, { encoding: 'utf8' }, (err, data) => {
       if (!err) {
-        const valueStr = data.replace(/\$\{dateTime\}/g, title)
+        const valueStr = data.replace(/\$\{bgImgPath\}/g, bgImgPath)
         resolve(valueStr)
       }
       resolve("")

@@ -9,11 +9,11 @@ const consola = require('consola')
 
 // ------------------ 代码实现 ----------------------------
 
-async function crawBingImgs(dirPath, imgName) {
+async function getBingImg() {
     // 只下载一个
     const hrefs = await getImgUrls()
     const url = hrefs[0]
-    await downloadFiles(url, dirPath, imgName)
+    return url;
 }
 
 
@@ -58,4 +58,6 @@ async function downloadFiles(url, dirPath, imgName) {
 
 //-----------导出-------
 
-module.exports = crawBingImgs
+module.exports = getBingImg
+
+// crawBingImgs()
