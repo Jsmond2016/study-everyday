@@ -1,7 +1,7 @@
 
 # 0928 本周总结
 
-![](./bg-imgs/0928-1.jpg)
+![](http://h2.ioliu.cn/bing/DorsetPinnacles_ZH-CN2764578102_1920x1080.jpg)
 
 ## 问题盘点
 
