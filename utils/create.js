@@ -43,7 +43,7 @@ async function start() {
 
   await writeRoute({ month, routeItem, fileMonthDirPath, tipMsg: modeToRouteMessage[mode] })
   const bgImgPath = await getBingImg();
-  const template = await readFileContent(mode, bgImgPath)
+  const template = await readFileContent(mode, bgImgPath, dateTime)
   await createTodayFile({ name: fileName, data: template, filePath, fileMonthDirPath, tipMsg: modeToTplMessage[mode] })
 }
 
@@ -188,12 +188,12 @@ async function createTodayFile({ data, filePath, fileMonthDirPath, tipMsg }) {
   })
 }
 
-function readFileContent(fileName, bgImgPath) {
+function readFileContent(fileName, bgImgPath, dateTime) {
   return new Promise((resolve) => {
     const pathUrl = path.resolve(__dirname, 'templates', `${fileName}.md`)
     fs.readFile(pathUrl, { encoding: 'utf8' }, (err, data) => {
       if (!err) {
-        const valueStr = data.replace(/\$\{bgImgPath\}/g, bgImgPath)
+        const valueStr = data.replace(/\$\{bgImgPath\}/g, bgImgPath).replace(/\$\{dateTime\}/g, dateTime)
         resolve(valueStr)
       }
       resolve("")
