@@ -1,8 +1,29 @@
 # 手写 js 代码
 
+**目录：**
+
+- 防抖节流
+- 事件委托
+- 深浅拷贝
+- —维数组转树形结构
+- 发布订阅模式
+- 数组扁平化
+- 函数柯里化
+- 实现compose
+- 利用mouse事件写一个可拖拽的div
+- query 参数解析成对象
+- 选择/快速/冒泡排序算法
+- 手写懒加载
+- 手写 instanceof 和 new
+- 手写 call/apply/bind 并发请求的控制
+- 使用 setTmeout 模拟 setlnterval
+- 驼峰命名和下划线命名互换
+
+
+
 ## 防抖节流
 
-日报 #1129
+日报 1129#
 
 ```js
  // 防抖（一段时间会等，然后带着一起做了）
@@ -42,7 +63,7 @@
 
 ## 事件委托
 
-日报 #1130
+日报 1130#
 
 ```js
 ul.addEventListener('click', function(e){
@@ -72,7 +93,7 @@ function delegate(parentNode, eventType, selector, fn) {
 
 ## 深浅拷贝
 
-日报 #1201
+日报 1201#
 
 ```js
 let obj1 = {
@@ -154,7 +175,7 @@ console.log('cloneObj', cloneObj)
 
 ## 一维数组转树形结构：
 
-日报 #1202
+日报 1202#
 
 ```js
 const source = [
@@ -210,7 +231,7 @@ console.log(JSON.stringify(rootObj))
 
 ## 发布订阅模式
 
-日报 #1203
+日报 1203#
 
 ```js
 class Event {
@@ -286,7 +307,7 @@ event.removeEventListener('load')
 
 ## 数组扁平化
 
-日报 #1206
+日报 1206#
 
 ```js
 // 方法一： reduce,  Array.isArray, ...拓展运算符/concat, 递归 flattern
@@ -336,7 +357,7 @@ console.log('result', result)
 
 ## 函数柯里化
 
-日报 #1207
+日报 1207#
 
 ```js
 let curry = fn => {
@@ -358,7 +379,7 @@ let curry = fn => {
 
 ## 实现 compose
 
-日报 #1208
+日报 1208#
 
 ```js
 function compose() {
@@ -612,7 +633,7 @@ quickSort([5,4,3,2,1,8])
 
 ## 手写 instanceof 和 new
 
-日报1220#
+日报 1220#
 
 手写 instanceof
 
