@@ -1,7 +1,8 @@
 
 # ${dateTime} 今日总结
 
-![](./bg-imgs/${dateTime}.jpg)
+![](${bgImgPath})
+
 
 
 ## 今日工作
