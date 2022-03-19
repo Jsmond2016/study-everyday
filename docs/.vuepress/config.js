@@ -40,6 +40,7 @@ function getGuideSidebar() {
         {
           text: '随笔文章',
           children: [
+            { text: "windows-terminal-美化教程", link: '/basic/read-notes/windows-terminal'},
             { text: 'js toFixed 四舍五入问题', link: '/basic/read-notes/js-to-fixed', sidebarDepth: 1, },
             { text: '如何高效学习', link: '/basic/read-notes/book-1' },
             { text: '如何做前端技术设计', link: '/basic/read-notes/book-2' },
