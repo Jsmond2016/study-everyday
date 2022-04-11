@@ -53,6 +53,7 @@ function getGuideSidebar() {
         { text: 'TODOS', link: '/basic/todos' },
         { text: '面试冲刺', link: '/basic/fe-interview' },
         { text: '手写js', link: '/basic/hand-js' },
+        { text: '面经整理-爪哇教育', link: '/interview/zhuawa-0404' },
       ]
     },
     {
