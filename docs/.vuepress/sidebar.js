@@ -1,5 +1,14 @@
 module.exports = [
   {
+    "text": "7月",
+    "children": [
+      {
+        "text": "0710",
+        "link": "/record-2022/07/0710"
+      }
+    ]
+  },
+  {
     "text": "6月",
     "children": [
       {
