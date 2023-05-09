@@ -5,7 +5,22 @@ const path = require('path')
 const consola = require('consola')
 
 
-
+const httpRequestHeaderConfig =  {
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "accept-language": "zh-CN,zh;q=0.9",
+  "cache-control": "no-cache",
+  "pragma": "no-cache",
+  "sec-ch-ua": "\"Google Chrome\";v=\"113\", \"Chromium\";v=\"113\", \"Not-A.Brand\";v=\"24\"",
+  "sec-ch-ua-mobile": "?0",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "sec-fetch-dest": "document",
+  "sec-fetch-mode": "navigate",
+  "sec-fetch-site": "cross-site",
+  "sec-fetch-user": "?1",
+  "upgrade-insecure-requests": "1",
+  "mode": "cors",
+  "credentials": "omit"
+}
 
 // ------------------ 代码实现 ----------------------------
 
@@ -20,7 +35,7 @@ async function getBingImg() {
 function getImgUrls() {
   const baseUrl = 'http://h2.ioliu.cn/bing'
   return new Promise((resolve) => {
-    request.get('https://bing.ioliu.cn/?p=1').then(async (response) => {
+    request.get('https://bing.ioliu.cn/?p=1', { headers: httpRequestHeaderConfig }).then(async (response) => {
       if (response.status !== 200) return
       const $ = cheerio.load(response.data)
       const hrefList = $('.container > div.item > div.progressive > a.mark').map((_, item) => {

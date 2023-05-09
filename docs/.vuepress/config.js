@@ -1,5 +1,6 @@
 const taskLists = require('markdown-it-task-lists');
 const archive2021Sidebar = require('./sidebar.archive-2021');
+const archive2022Sidebar = require('./sidebar.archive-2022');
 const sideBar = require('./sidebar');
 
 module.exports = {
@@ -36,7 +37,6 @@ function getGuideSidebar() {
     {
       text: '每日学习',
       children: [
-        { text: '2022年度目标', link: '/basic/goal-2022' },
         {
           text: '随笔文章',
           children: [
@@ -61,7 +61,12 @@ function getGuideSidebar() {
       children: sideBar
     },
     {
-      text: 'archives',
+      text: 'archives-2022',
+      collapsible: true,
+      children: archive2022Sidebar.map(item => ({ ...item, collapsible: true }))
+    },
+    {
+      text: 'archives-2021',
       collapsible: true,
       children: archive2021Sidebar.map(item => ({ ...item, collapsible: true }))
     }
