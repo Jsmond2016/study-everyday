@@ -1,4 +1,4 @@
-module.exports = [
+const sidebar = [
   { text: '2022年度目标', link: '/basic/goal-2022' },
   {
     "text": "7月",
@@ -144,3 +144,5 @@ module.exports = [
     ]
   }
 ]
+
+export default sidebar

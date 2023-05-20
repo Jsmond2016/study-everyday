@@ -1,4 +1,4 @@
-module.exports = [
+const sidebar = [
   { text: '2021年度目标', link: '/record-2021/goal-2021' },
   { text: '10月目标', link: '/record-2021/target-month-10' },
   { text: '8月目标', link: '/record-2021/target-month-8' },
@@ -793,3 +793,5 @@ module.exports = [
     ]
   }
 ]
+
+export default sidebar;

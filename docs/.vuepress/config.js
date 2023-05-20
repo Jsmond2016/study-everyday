@@ -1,36 +1,33 @@
-const taskLists = require('markdown-it-task-lists');
-const archive2021Sidebar = require('./sidebar.archive-2021');
-const archive2022Sidebar = require('./sidebar.archive-2022');
-const sideBar = require('./sidebar');
 
-module.exports = {
+import { defineUserConfig, defaultTheme  } from 'vuepress'
+import VuepressPluginAnchorRight from 'vuepress-plugin-anchor-right'
+import taskLists from 'markdown-it-task-lists'
+import archive2021Sidebar from './sidebar.archive-2021'
+import archive2022Sidebar from './sidebar.archive-2022'
+import sideBar from './sidebar'
+
+
+export default defineUserConfig({
   lang: 'zh-CN',
   title: '每日学习',
   description: '前端进阶每日学习',
   base: "/study-everyday/",
-  theme: '@vuepress/theme-default',
-  themeConfig: {
+  theme: defaultTheme({
     repo: 'Jsmond2016/study-everyday',
     docsDir: 'docs',
     editLinks: true,
     editLinkText: '编辑本页',
     lastUpdated: '最后更新时间',
     displayAllHeaders: true,
-    //TODO:  nav: [
-    //   { text: 'vuepress', link: 'https://vuepress.vuejs.org/zh/' }
-    // ],
     sidebar: getGuideSidebar(),
-  },
-  // markdown: {
-  //   extendMarkdown: (md) => {
-  //     // use more markdown-it plugins!
-  //     md.use(taskLists)
-  //   }
-  // }
+  }),
   extendsMarkdown: (md) => {
     md.use(taskLists)
-  }
-}
+  },
+  plugins: [
+    [VuepressPluginAnchorRight()]
+  ]
+})
 
 function getGuideSidebar() {
   return [
