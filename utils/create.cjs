@@ -193,7 +193,8 @@ function readFileContent(fileName, bgImgPath, dateTime) {
     const pathUrl = path.resolve(__dirname, 'templates', `${fileName}.md`)
     fs.readFile(pathUrl, { encoding: 'utf8' }, (err, data) => {
       if (!err) {
-        const valueStr = data.replace(/\$\{bgImgPath\}/g, bgImgPath).replace(/\$\{dateTime\}/g, dateTime)
+        const valueStr = data.replace(/\$\{bgImgPath\}/g, bgImgPath)
+        // .replace(/\$\{dateTime\}/g, dateTime)
         resolve(valueStr)
       }
       resolve("")

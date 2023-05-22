@@ -1,7 +1,7 @@
 
 # ${dateTime} 本周总结
 
-![](./bg-imgs/${dateTime}.jpg)
+![](${bgImgPath})
 
 ## 问题盘点/学习总结
 

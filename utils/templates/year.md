@@ -1,7 +1,7 @@
 
 # 年度模板 ${dateTime}
 
-![](./bg-imgs/${dateTime}.jpg)
+![](${bgImgPath})
 
 ## 工作
 
