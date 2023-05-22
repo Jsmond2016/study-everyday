@@ -3,6 +3,7 @@ import taskLists from 'markdown-it-task-lists'
 
 import sidebar2021 from "./sidebar.archive-2021"
 import sidebar2022 from "./sidebar.archive-2022"
+import sidebar from './sidebar.cjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -89,5 +90,6 @@ function homeSideBar() {
   return [
     { text: "TODOS", link: "/basic/todos" },
     { text: "模板", link: "/basic/template" },
+    ...sidebar
   ]
 }
