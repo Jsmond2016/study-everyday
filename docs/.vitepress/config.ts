@@ -7,13 +7,14 @@ import sidebar from './sidebar.cjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "study-everyday",
+  title: "Study-Everyday",
   base: "/study-everyday/",
   description: "My Study Notes for everyday",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: nav(),
     sidebar: {
+      "/record-2023/": noteSideBar(),
       "/basic/": homeSideBar(),
       "/record-2021/": sidebar2021,
       "/record-2022/": sidebar2022,
@@ -31,6 +32,7 @@ export default defineConfig({
 
 function nav() {
   return [
+    { text: "每日笔记", link: "/record-2023/index", activeMatch: "/record-2023/" },
     { text: "Home", link: "/basic/todos", activeMatch: "/basic/" },
     {
       text: "存档",
@@ -86,10 +88,18 @@ function articleSidebar() {
   ]
 }
 
+function noteSideBar() {
+  return [
+    { text: '笔记首页', link: "/record-2023/index"},
+    // { text: '模板', link: "/record-2023/index"},
+    { text: 'TODOS', link: "/record-2023/todos"},
+    ...sidebar
+  ]
+}
+
 function homeSideBar() {
   return [
     { text: "TODOS", link: "/basic/todos" },
     { text: "模板", link: "/basic/template" },
-    ...sidebar
   ]
 }
