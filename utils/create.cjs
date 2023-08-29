@@ -40,7 +40,6 @@ async function start() {
     monthStr: month,
     fileMonthDirPath
   } = getTplInfo(mode, dateStr)
-
   await writeRoute({ month, routeItem, fileMonthDirPath, tipMsg: modeToRouteMessage[mode] })
   const bgImgPath = await getBingImg();
   const template = await readFileContent(mode, bgImgPath, dateTime)
@@ -194,7 +193,7 @@ function readFileContent(fileName, bgImgPath, dateTime) {
     fs.readFile(pathUrl, { encoding: 'utf8' }, (err, data) => {
       if (!err) {
         const valueStr = data.replace(/\$\{bgImgPath\}/g, bgImgPath)
-        // .replace(/\$\{dateTime\}/g, dateTime)
+        .replace(/\$\{dateTime\}/g, dateTime)
         resolve(valueStr)
       }
       resolve("")
