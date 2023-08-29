@@ -7,7 +7,7 @@
   },
   "scripts": {
     "new": "node ./utils/create.cjs",
-    "dev": "vitepress dev docs",
+    "dev": "vitepress dev docs --port 5001",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs"
   },
