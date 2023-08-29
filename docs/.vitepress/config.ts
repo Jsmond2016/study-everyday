@@ -20,6 +20,8 @@ export default defineConfig({
       "/record-2022/": sidebar2022,
       "/read-notes/": articleSidebar(),
     },
+    // https://vitepress.dev/reference/default-theme-config#outline
+    outline: [1, 4],
     search: {
       provider: 'local'
     },
