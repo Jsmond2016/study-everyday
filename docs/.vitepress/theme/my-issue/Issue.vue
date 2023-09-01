@@ -6,7 +6,7 @@
 import { onMounted } from "vue"
 import "gitalk/dist/gitalk.css"
 import Gitalk from "gitalk"
-import { loadEnv } from 'vitepress'
+import md5 from 'md5'
 
 
 
@@ -16,7 +16,7 @@ onMounted(() => {
     s_div.setAttribute("id", "gitalk-page-container") // 设置id
     document.querySelector(".content-container")?.appendChild(s_div) // querySelector的节点可自己根据自己想加载的地方设置
     var gitment = new Gitalk({
-      id: location.pathname, // 可选。默认为 location.href
+      id: md5(location.pathname) as string, // 可选。默认为 location.href
       owner: "Jsmond2016", // GitHub repository 所有者
       // jsmond2016.github.io/study-everyday
       // repo: "jsmond2016.github.io/study-everyday", // GitHub repository
