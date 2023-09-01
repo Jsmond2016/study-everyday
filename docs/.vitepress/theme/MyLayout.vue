@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import Issue from "./Issue/Issue.vue"
+import Issue from "./my-issue/Issue.vue"
 import DefaultTheme from 'vitepress/theme'
 const { Layout } = DefaultTheme
 
