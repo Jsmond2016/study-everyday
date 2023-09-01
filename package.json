@@ -12,6 +12,7 @@
     "preview": "vitepress preview docs"
   },
   "dependencies": {
+    "gitalk": "^1.8.0",
     "markdown-it-task-lists": "^2.1.1",
     "medium-zoom": "^1.0.8"
   }

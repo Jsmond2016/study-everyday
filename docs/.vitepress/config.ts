@@ -1,12 +1,20 @@
-import { defineConfig } from "vitepress"
+import { defineConfig, loadEnv } from "vitepress"
 import taskLists from "markdown-it-task-lists"
 
 import sidebar2021 from "./sidebar.archive-2021"
 import sidebar2022 from "./sidebar.archive-2022"
 import sidebar from "./sidebar.cjs"
 
+const env = loadEnv('', process.cwd())
+console.log('process.cwd(): ', process.cwd());
+console.log('env: ', env);
+
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  // vite: {
+  //   envDir: import.meta.resolve(process.cwd(), '.envs')
+  // },
   title: "Study-Everyday",
   base: "/study-everyday/",
   description: "My Study Notes for everyday",
