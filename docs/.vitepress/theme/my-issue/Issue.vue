@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, watch } from "vue"
+import { onMounted, watch, ref } from "vue"
 import "gitalk/dist/gitalk.css"
 import Gitalk from "gitalk"
 import md5 from "md5"
@@ -57,3 +57,12 @@ watch(route, () => {
 
 
 </script>
+
+<style lang="css" scoped>
+
+.gt-container .gt-header-comment textarea.gt-header-textarea  {
+  background-color: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+}
+
+</style>

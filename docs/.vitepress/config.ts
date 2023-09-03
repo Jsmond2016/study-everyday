@@ -73,8 +73,8 @@ function nav() {
     },
     {
       text: "留言板",
-      link: "/message-board/index",
-      activeMatch: "/message-board/",
+      link: "/message-board/index-1",
+      activeMatch: "/message-board/index-1",
     },
   ]
 }
