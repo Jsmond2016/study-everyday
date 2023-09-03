@@ -1,4 +1,5 @@
 {
+  "version": "2.0.0",
   "devDependencies": {
     "axios": "^1.4.0",
     "cheerio": "^1.0.0-rc.12",
