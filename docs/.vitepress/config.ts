@@ -6,8 +6,12 @@ import sidebar2022 from "./sidebar.archive-2022"
 import sidebar from "./sidebar.cjs"
 
 
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    envDir: process.cwd()
+  },
   title: "Study-Everyday",
   base: "/study-everyday/",
   description: "My Study Notes for everyday",
