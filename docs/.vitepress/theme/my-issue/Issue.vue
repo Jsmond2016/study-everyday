@@ -18,7 +18,7 @@ const createIssueContainer = () => {
 }
 
 // @ts-ignore
-const env: Record<string, string | number> = import.meta.env;
+const env: Record<string, string | number> = import.meta.env
 
 const createIssueObject = () => {
   const issue = new Gitalk({
@@ -54,14 +54,28 @@ const route = useRoute()
 watch(route, () => {
   setComment()
 })
-
-
 </script>
 
-<style lang="css" scoped>
-
-.gt-container .gt-header-comment textarea.gt-header-textarea  {
+<style lang="css">
+.gt-container .gt-header-comment textarea.gt-header-textarea {
   background-color: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  border-color: var(--vp-c-divider);
+}
+
+.gt-container .gt-header-comment .gt-btn {
+  background-color: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  border-color: var(--vp-c-divider);
+}
+
+.gt-container .gt-comment .gt-comment-content {
+  background-color: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  border-color: var(--vp-c-divider);
+}
+
+.gt-container .gt-comment .gt-comment-content > .gt-comment-body {
   color: var(--vp-c-text-1);
 }
 
