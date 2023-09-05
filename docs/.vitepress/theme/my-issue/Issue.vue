@@ -25,7 +25,7 @@ const createIssueObject = () => {
     id: md5(location.pathname) as string, // 可选。默认为 location.href
     owner: "Jsmond2016", // GitHub repository 所有者
     repo: "study-everyday", // GitHub repository
-    clientID: "14a1df62d5a6c6c85d1b", // 自己的clientID
+    clientID: env.VITE_CLIENT_ID as string, // 自己的clientID
     clientSecret: env.VITE_CLIENT_SECRET as string, // 自己的 clientSecret
     admin: ["Jsmond2016"], // GitHub repository 所有者
     labels: ["Gitalk"], // GitHub issue 的标签

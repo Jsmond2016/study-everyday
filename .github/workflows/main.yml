@@ -15,6 +15,7 @@ jobs:
       - name: create env file
         run: |
           touch .env
+          echo VITE_CLIENT_ID=${{ secrets.CLIENT_ID }} >> .env
           echo VITE_CLIENT_SECRET=${{ secrets.CLIENT_SECRET }} >> .env
       - name: install and build
         run: |
