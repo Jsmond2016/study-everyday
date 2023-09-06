@@ -7,11 +7,11 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js 16
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
         with:
-          node-version: "16.19.0"
+          node-version: "20.6.0"
       - name: create env file
         run: |
           touch .env
@@ -22,8 +22,11 @@ jobs:
           yarn install
           yarn build
       - name: 部署到 github-page...
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@4
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
           folder: docs/.vitepress/dist
+          clean: true
+          clean-exclude: |
+            .env
