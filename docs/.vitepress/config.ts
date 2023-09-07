@@ -12,6 +12,7 @@ export default defineConfig({
   vite: {
     envDir: process.cwd()
   },
+  appearance: false,
   title: "Study-Everyday",
   base: "/study-everyday/",
   description: "My Study Notes for everyday",

@@ -6,31 +6,27 @@
 
 - [puxio/notes](https://github.com/puxiao/notes)
 
-我的其他学习记录：
 
-- [数据结构和算法学习](https://jsmond2016.github.io/leetcode/)
-- [go-study](https://jsmond2016.github.io/go-study/)
+## 每日阅读（中文）
 
-**好文推荐**
-
-- [跳槽人速来，面经&资源分享](https://juejin.cn/post/6942988170208215076#heading-16) 面经+面经资源，**值得反复看**。
-
-
-## 每日阅读
-
-- [前端精读](https://github.com/ascoders/weekly)
 - [每日时报](https://wubaiqing.github.io/zaobao/)
 - [掘金-前端](https://juejin.cn/frontend)
 - [setment-推荐](https://segmentfault.com/blogs)
 - [v2ex](https://v2ex.com/?tab=jobs)
+- [前端精读](https://github.com/ascoders/weekly)
 
-## 每日算法
 
-- [labuladong 的算法小抄](https://labuladong.gitbook.io/algo/)
-- [力扣加加](https://leetcode-solution-leetcode-pp.gitbook.io/leetcode-solution/)
-- [小浩算法](https://github.com/geekxh/hello-algorithm)
+## 每日阅读（英文）
 
-## 优秀的个人博客推荐
+- [DEV Community 👩‍💻👨‍💻](https://dev.to/)
+- [Hacker News](https://news.ycombinator.com/)
+- [JavaScript Weekly Archives](https://javascriptweekly.com/issues)
+- [Medium – Where good ideas find you.](https://medium.com/)
+- [JavaScript Weekly #578 | Weekly Tracker](https://weekly.fedarling.com/javascript_weekly/578/#%E7%AE%80%E8%BF%B0)
+- [JavaScript Talks](https://js-talks.netlify.app/)
+- [David Walsh Blog - JavaScript Consultant](https://davidwalsh.name/)
+
+## 优秀的个人博客
 
 - [冴羽的博客](https://github.com/mqyqingfeng/Blog)
 - [前端精读](https://github.com/ascoders/weekly)
@@ -41,7 +37,7 @@
 - [徐小夕](https://juejin.cn/user/3808363978429613/posts)
 
 
-## 优秀团队博客推荐
+## 优秀团队博客
 
 - [政采云前端团队](https://juejin.cn/user/3456520257288974/posts)
 - [微医前端团队](https://juejin.cn/team/6932676282429898766/posts)
@@ -51,5 +47,15 @@
 - [快狗打车前端团队](https://juejin.cn/user/2612095359650712/posts)
 
 
+
+## 好文推荐
+
+- [跳槽人速来，面经&资源分享](https://juejin.cn/post/6942988170208215076#heading-16) 面经+面经资源，**值得反复看**。
+
+## 每日算法
+
+- [labuladong 的算法小抄](https://labuladong.gitbook.io/algo/)
+- [力扣加加](https://leetcode-solution-leetcode-pp.gitbook.io/leetcode-solution/)
+- [小浩算法](https://github.com/geekxh/hello-algorithm)
 
 
