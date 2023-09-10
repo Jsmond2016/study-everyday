@@ -49,6 +49,8 @@ async function getBingImg() {
 
 function getImgUrls() {
   const baseUrl = "http://h2.ioliu.cn/bing"
+  // 最新的图片链接；
+  // https://bing.com/th?id=OHR.WalrusSvalbard_ZH-CN6343458320_1920x1080.jpg
   return new Promise((resolve) => {
     request
       .get("https://bing.ioliu.cn/?p=1", { headers: cfg })

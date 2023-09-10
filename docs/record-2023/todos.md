@@ -35,5 +35,5 @@
 
 - [常用模板](https://vitepress.dev/guide/markdown#custom-containers) 如： `info | tip | warning | danger | details`
 - [常用 Badge](https://vitepress.dev/reference/default-theme-badge#badge) 常用的 tag `Badge`
-- [常用表情](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
+- [emoji 常用表情](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
 - [代码高亮、格式化、显示行高、模块引入等](https://vitepress.dev/guide/markdown#focus-in-code-blocks) 
