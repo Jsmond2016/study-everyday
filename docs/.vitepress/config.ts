@@ -53,7 +53,7 @@ function nav() {
     },
     // { text: "Home", link: "/basic/todos", activeMatch: "/basic/" },
     {
-      text: "笔记存档",
+      text: "历史笔记存档",
       items: [
         {
           text: "2022年",
@@ -123,6 +123,7 @@ function articleSidebar() {
 
 function noteSideBar() {
   return [
+    { text: "恢复更新", link: "/record-2023/resume-updates" },
     { text: "笔记首页", link: "/record-2023/index" },
     // { text: '模板', link: "/record-2023/index"},
     { text: "TODOS", link: "/record-2023/todos" },
