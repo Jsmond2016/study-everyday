@@ -31,6 +31,7 @@
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/weekly/)
 - [张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/)
 - [咖啡机（K.F.J）的主页 - 博客园](https://home.cnblogs.com/u/strick/) 一位工作超过 10 年的前端大佬
+- [zxg_神说要有光 的个人主页](https://juejin.cn/user/2788017216685118/posts)
 - [冴羽的博客](https://github.com/mqyqingfeng/Blog)
 - [前端精读](https://github.com/ascoders/weekly)
 - [若川的博客](https://lxchuan12.gitee.io/)
