@@ -2,8 +2,10 @@
 
 ## 复盘
 
+- 每 周 进行一次总结，梳理一下不同专题的知识进行整理；
 - 每一篇笔记内容不要太多，否则看到后面没有兴趣；可以分作多篇；
 - 主题关键词需要突出，如：模板，设计资源、前端工具 等；
+- 可以整理一个效率工具专栏，包含各种前端开发相关的提效工具、写文档、文章的工具；今天整理的是 AI 相关的提效工具
 ## Study-Everyday 优化
 
 - [ ] 更新每日记录的 首页；封面；参考 [HanochMa](https://hanochma.github.io/)
@@ -42,4 +44,4 @@
 - [常用模板](https://vitepress.dev/guide/markdown#custom-containers) 如： `info | tip | warning | danger | details`
 - [常用 Badge](https://vitepress.dev/reference/default-theme-badge#badge) 常用的 tag `Badge`
 - [emoji 常用表情](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
-- [代码高亮、格式化、显示行高、模块引入等](https://vitepress.dev/guide/markdown#focus-in-code-blocks) 
+- [代码高亮、格式化、显示行高、模块引入等](https://vitepress.dev/guide/markdown#focus-in-code-blocks)
