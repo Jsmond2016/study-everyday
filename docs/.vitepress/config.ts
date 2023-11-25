@@ -1,16 +1,14 @@
-import { defineConfig } from "vitepress"
-import taskLists from "markdown-it-task-lists"
+import { defineConfig } from "vitepress";
+import taskLists from "markdown-it-task-lists";
 
-import sidebar2021 from "./sidebar.archive-2021"
-import sidebar2022 from "./sidebar.archive-2022"
-import sidebar from "./sidebar.cjs"
-
-
+import sidebar2021 from "./sidebar.archive-2021";
+import sidebar2022 from "./sidebar.archive-2022";
+import sidebar from "./sidebar.cjs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
-    envDir: process.cwd()
+    envDir: process.cwd(),
   },
   appearance: false,
   title: "Study-Everyday",
@@ -25,15 +23,18 @@ export default defineConfig({
       "/record-2021/": sidebar2021,
       "/record-2022/": sidebar2022,
       "/read-notes/": articleSidebar(),
+      "/special-topic/": specialTopic(),
+      "/fe-nav/": feNavSidebar(),
     },
     // https://vitepress.dev/reference/default-theme-config#outline
     outline: [1, 4],
     search: {
-      provider: 'local'
+      provider: "local",
     },
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023-present <a href="https://github.com/Jsmond2016/">Jsmond</a>'
+      message: "Released under the MIT License.",
+      copyright:
+        'Copyright © 2023-present <a href="https://github.com/Jsmond2016/">Jsmond</a>',
     },
     socialLinks: [
       { icon: "github", link: "https://github.com/Jsmond2016/study-everyday" },
@@ -42,7 +43,7 @@ export default defineConfig({
   markdown: {
     config: (md) => md.use(taskLists),
   },
-})
+});
 
 function nav() {
   return [
@@ -73,13 +74,22 @@ function nav() {
       activeMatch: "/read-notes|interview/",
     },
     {
+      text: "专题整理",
+      link: "/special-topic/projects/index",
+      activeMatch: "/special-topic/",
+    },
+    {
+      text: "前端导航",
+      link: "/fe-nav/index",
+      activeMatch: "/fe-nav/",
+    },
+    {
       text: "留言板",
       link: "/message-board/index-1",
       activeMatch: "/message-board/index-1",
     },
-  ]
+  ];
 }
-
 
 function articleSidebar() {
   return [
@@ -118,7 +128,7 @@ function articleSidebar() {
         { text: "leetcode目录", link: "/read-notes/leetcode-category" },
       ],
     },
-  ]
+  ];
 }
 
 function noteSideBar() {
@@ -128,12 +138,49 @@ function noteSideBar() {
     // { text: '模板', link: "/record-2023/index"},
     { text: "TODOS", link: "/record-2023/todos" },
     ...sidebar,
-  ]
+  ];
 }
 
 function homeSideBar() {
   return [
     { text: "TODOS", link: "/basic/todos" },
     { text: "模板", link: "/basic/template" },
-  ]
+  ];
+}
+
+function specialTopic() {
+  return [
+    { text: "ChatGPT & AI", link: "/special-topic/gpt/index" },
+    {
+      text: "项目模板",
+      items: [
+        {
+          text: "首页",
+          link: "/special-topic/projects/index",
+        },
+        {
+          text: "Vue-H5 模板",
+          link: "/special-topic/projects/vue-h5",
+        },
+      ],
+    },
+    { text: "好用的工具", link: "/special-topic/tools/index" },
+    { text: "Web3相关", link: "/special-topic/web3/index" },
+    { text: "问题专栏", link: "/special-topic/questions/index" },
+  ];
+}
+
+function feNavSidebar() {
+  // 前端导航
+
+  // 参考如下：
+  // https://fe-nav.netlify.app/nav/
+  // https://web-abin.gitee.io/abin-web/tools
+
+  return [
+    {
+      text: "前端导航",
+      link: "/fe-nav/index",
+    },
+  ];
 }
