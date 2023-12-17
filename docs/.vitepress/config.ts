@@ -133,7 +133,7 @@ function articleSidebar() {
 
 function noteSideBar() {
   return [
-    { text: "恢复更新", link: "/record-2023/resume-updates" },
+    // { text: "恢复更新", link: "/record-2023/resume-updates" },
     { text: "笔记首页", link: "/record-2023/index" },
     // { text: '模板', link: "/record-2023/index"},
     { text: "TODOS", link: "/record-2023/todos" },

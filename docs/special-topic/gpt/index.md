@@ -1,5 +1,10 @@
 # ChatGPT
 
+## TODO
+
+- [bleedline/aimoneyhunter: ai 副业赚钱大集合，教你如何利用 ai 做一些副业项目，赚取更多额外收益。](https://github.com/bleedline/aimoneyhunter)
+- [飞书文档-ChatGPT+麦肯锡方法论，快速了解一个行业](https://ki6j1b0d92h.feishu.cn/wiki/E4I1wSQY6i2GxAkMANuc0E8anRd)
+
 ## 新闻
 
 - [让 ChatGPT 帮我们总结 Hacker News - 喵叔没话说](https://blog.betacat.io/post/2023/06/summarize-hacker-news-by-chatgpt/)
