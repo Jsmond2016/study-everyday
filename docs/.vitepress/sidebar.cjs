@@ -3,13 +3,17 @@ module.exports = [
     "text": "12月",
     "items": [
       {
+        "text": "1217",
+        "link": "/record-2023/12/1217"
+      },
+      {
         "text": "1216",
         "link": "/record-2023/12/1216"
       },
       {
-        "text": "1217",
-        "link": "/record-2023/12/1217"
-      }
+        "text": "1215",
+        "link": "/record-2023/12/1215"
+      },
     ]
   },
   {
