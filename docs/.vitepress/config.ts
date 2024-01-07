@@ -3,6 +3,7 @@ import taskLists from "markdown-it-task-lists";
 
 import sidebar2021 from "./sidebar.archive-2021";
 import sidebar2022 from "./sidebar.archive-2022";
+import sidebar2023 from "./sidebar.archive-2023";
 import sidebar from "./sidebar.cjs";
 
 // https://vitepress.dev/reference/site-config
@@ -18,10 +19,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: nav(),
     sidebar: {
-      "/record-2023/": noteSideBar(),
+      "/record-2024/": noteSideBar(),
       // "/basic/": homeSideBar(),
       "/record-2021/": sidebar2021,
       "/record-2022/": sidebar2022,
+      "/record-2023/": sidebar2023,
       "/read-notes/": articleSidebar(),
       "/special-topic/": specialTopic(),
       "/fe-nav/": feNavSidebar(),
@@ -34,7 +36,7 @@ export default defineConfig({
     footer: {
       message: "Released under the MIT License.",
       copyright:
-        'Copyright © 2023-present <a href="https://github.com/Jsmond2016/">Jsmond</a>',
+        'Copyright © 2023-present <a href="https://github.com/Jsmond2016/">Jsmond2016</a>',
     },
     socialLinks: [
       { icon: "github", link: "https://github.com/Jsmond2016/study-everyday" },
@@ -47,15 +49,20 @@ export default defineConfig({
 
 function nav() {
   return [
+    { text: "首页", link: "/home/index", activeMatch: "/home/" },
     {
       text: "每日笔记",
-      link: "/record-2023/index",
-      activeMatch: "/record-2023/",
+      link: "/record-2024/index",
+      activeMatch: "/record-2024/",
     },
-    // { text: "Home", link: "/basic/todos", activeMatch: "/basic/" },
     {
       text: "历史笔记存档",
       items: [
+        {
+          text: "2023年",
+          link: "/record-2023/index",
+          activeMatch: "/record-2023/",
+        },
         {
           text: "2022年",
           link: "/record-2022/goal-2022",
@@ -134,9 +141,8 @@ function articleSidebar() {
 function noteSideBar() {
   return [
     // { text: "恢复更新", link: "/record-2023/resume-updates" },
-    { text: "笔记首页", link: "/record-2023/index" },
-    // { text: '模板', link: "/record-2023/index"},
-    { text: "TODOS", link: "/record-2023/todos" },
+    { text: "笔记首页", link: "/record-2024/index" },
+    { text: 'TODOS', link: "/record-2024/todos"},
     ...sidebar,
   ];
 }

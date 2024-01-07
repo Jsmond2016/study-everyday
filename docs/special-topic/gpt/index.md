@@ -1,7 +1,8 @@
 # ChatGPT
 
 ## TODO
-
+- [网友将周刊迄今的所有内容进行了向量化索引，提交给 ChatGPT，然后就可以跟周刊问答了 Aha Vector Search](https://www.ahavs.com/chat-ruanyifeng) 阮一峰老师的博客喂给 gpt，在此网站可以进行向量化搜索；
+- [编写ChatGPT指令（Prompt）的万能模板以及使用示例！ - 知乎](https://zhuanlan.zhihu.com/p/645413042?utm_id=0)
 - [bleedline/aimoneyhunter: ai 副业赚钱大集合，教你如何利用 ai 做一些副业项目，赚取更多额外收益。](https://github.com/bleedline/aimoneyhunter)
 - [飞书文档-ChatGPT+麦肯锡方法论，快速了解一个行业](https://ki6j1b0d92h.feishu.cn/wiki/E4I1wSQY6i2GxAkMANuc0E8anRd)
 
