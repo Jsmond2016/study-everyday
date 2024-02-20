@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 每日笔记
-      link: /record-2023/index
+      link: /record-2024/
     - theme: alt
       text: github
       link: https://github.com/Jsmond2016/study-everyday
