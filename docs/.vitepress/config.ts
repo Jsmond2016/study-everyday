@@ -172,6 +172,7 @@ function specialTopic() {
     },
     { text: "好用的工具", link: "/special-topic/tools/index" },
     { text: "Web3相关", link: "/special-topic/web3/index" },
+    { text: "区块链相关", link: "/special-topic/block-chain/index" },
     { text: "问题专栏", link: "/special-topic/questions/index" },
   ];
 }
