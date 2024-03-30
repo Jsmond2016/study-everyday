@@ -9,7 +9,11 @@ module.exports = [
       {
         "text": "0326",
         "link": "/record-2024/03/0326"
-      }
+      },
+      {
+        "text": "0315",
+        "link": "/record-2024/03/0315"
+      },
     ]
   },
   {

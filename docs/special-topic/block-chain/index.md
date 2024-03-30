@@ -1,7 +1,7 @@
 # Block-Chain
 
 
-
+- [花果山大圣：“关于找远程工作还有一个小技巧，那就是可以考虑学一下web3，一个信奉分布式的行业，虽然小众一些，但是基本都是远程办公，学一下solidity，前后端学起来都很快， hardhat相当于webpack，wagmi相当于lodash等等， 推荐一下两个学习的地方...](https://twitter.com/shengxj1/status/1679304457178456069)
 - [聊聊去年 Web3 圈里的那些事：财富自由、铭文和符文、BRC20 和 ARC20 以及代币发展史 - 掘金](https://juejin.cn/post/7330147786678386699)
 - [Web3 新手教程：从入门到精通 - 知乎](https://zhuanlan.zhihu.com/p/647524814)
 - [区块链视频汇总-网易云课堂](https://study.163.com/courses-search?keyword=%E5%8C%BA%E5%9D%97%E9%93%BE)
