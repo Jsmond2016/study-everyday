@@ -1,0 +1,1 @@
+import{_ as e,c as r,o as a,a3 as t}from"./chunks/framework.B1tUqxYT.js";const g=JSON.parse('{"title":"每日学习记录","description":"","frontmatter":{},"headers":[],"relativePath":"home/index.md","filePath":"home/index.md"}'),l={name:"home/index.md"},o=t("",18),i=[o];function n(h,s,f,c,u,p){return a(),r("div",null,i)}const d=e(l,[["render",n]]);export{g as __pageData,d as default};
