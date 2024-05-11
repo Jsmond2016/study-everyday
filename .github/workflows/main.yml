@@ -19,6 +19,8 @@ jobs:
           echo VITE_CLIENT_SECRET=${{ secrets.CLIENT_SECRET }} >> .env
       - name: install and build
         run: |
+          corepack enable
+          yarn set version stable
           yarn install
           yarn build
       - name: 部署到 github-page...
