@@ -1,11 +1,12 @@
 {
   "version": "2.0.0",
   "devDependencies": {
-    "axios": "^1.4.0",
+    "axios": "^1.6.8",
     "cheerio": "^1.0.0-rc.12",
-    "consola": "^3.1.0",
-    "vitepress": "^1.0.0-beta.1"
+    "consola": "^3.2.3",
+    "vitepress": "^1.1.4"
   },
+  "type": "module",
   "scripts": {
     "new": "node ./utils/create.cjs",
     "dev": "vitepress dev docs --port 5001",
@@ -16,6 +17,7 @@
     "gitalk": "^1.8.0",
     "markdown-it-task-lists": "^2.1.1",
     "md5": "^2.3.0",
-    "medium-zoom": "^1.0.8"
-  }
+    "medium-zoom": "^1.1.0"
+  },
+  "packageManager": "yarn@4.2.2"
 }
