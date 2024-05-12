@@ -5,7 +5,7 @@
 学习榜样：
 
 - [puxio/notes](https://github.com/puxiao/notes)
-
+- [2024年个人周报](https://github.com/superleeyom/blog/issues/57)
 
 ## 每日阅读（中文）
 
