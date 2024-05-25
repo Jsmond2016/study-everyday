@@ -7,6 +7,10 @@ module.exports = [
         "link": "/record-2024/05/0525"
       },
       {
+        "text": "0518",
+        "link": "/record-2024/05/0518"
+      },
+      {
         "text": "0510",
         "link": "/record-2024/05/0510"
       }
