@@ -26,7 +26,7 @@ export default defineConfig({
       "/record-2023/": sidebar2023,
       "/read-notes/": articleSidebar(),
       "/special-topic/": specialTopic(),
-      "/fe-nav/": feNavSidebar(),
+      // "/fe-nav/": feNavSidebar(),
     },
     // https://vitepress.dev/reference/default-theme-config#outline
     outline: [1, 4],
@@ -85,11 +85,11 @@ function nav() {
       link: "/special-topic/projects/index",
       activeMatch: "/special-topic/",
     },
-    {
-      text: "前端导航",
-      link: "/fe-nav/index",
-      activeMatch: "/fe-nav/",
-    },
+    // {
+    //   text: "前端导航",
+    //   link: "/fe-nav/index",
+    //   activeMatch: "/fe-nav/",
+    // },
     {
       text: "留言板",
       link: "/message-board/index-1",

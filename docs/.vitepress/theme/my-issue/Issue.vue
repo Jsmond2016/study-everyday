@@ -75,8 +75,7 @@ watch(route, () => {
   border-color: var(--vp-c-divider);
 }
 
-.gt-container .gt-comment .gt-comment-content > .gt-comment-body {
+.gt-container .gt-comment .gt-comment-content>.gt-comment-body {
   color: var(--vp-c-text-1);
 }
-
 </style>
