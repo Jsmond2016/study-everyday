@@ -139,8 +139,35 @@ function mkFileIfNotExists(path, data, tipMsg, forceFlag = false) {
 }
 
 
+function getNumberByDayText(text) {
+  return +text.match(/\d+/g)[0]
+}
+
+function compareTwoTextDate(routeA, routeB) {
+  const [aValue, bValue] = [routeA.text, routeB.text].map(getNumberByDayText)
+  return bValue - aValue;
+}
+
+// 格式化子路由-天
+function addDayRouteFormat(route, dayRoute) {
+  const { items } = route;
+   if (Array.isArray(items)) {
+    // 倒序时间排列
+    const newItems = [...items, dayRoute].toSorted(compareTwoTextDate)
+    return {
+      ...route,
+      items: newItems
+    }
+  }
+  return {
+    ...route,
+    items: [dayRoute]
+  }
+} 
+
+
 async function writeRoute({ month, routeItem, fileMonthDirPath, tipMsg }) {
-  const months = routes.map(item => item.text.slice(0, -1)).map(Number)
+  const months = routes.map(item => item.text.match(/\d+/g)[0]).map(Number)
   const hasMonthRouteFlag = months.indexOf(+month) > -1  
   const hasDayRouteFlag = routes.some(month => month.items.some(day => day.text === routeItem.text))
   if (hasDayRouteFlag) {
@@ -156,11 +183,7 @@ async function writeRoute({ month, routeItem, fileMonthDirPath, tipMsg }) {
   }
   const newRoutes = routes.map(route => {
     if (route.text === `${+month}月`) {
-      const items = Array.isArray(route.items) ? (route.items.unshift(routeItem), route.items) : [routeItem]
-      return {
-        ...route,
-        items
-      }
+      return addDayRouteFormat(route, routeItem)
     } else {
       return route
     }
