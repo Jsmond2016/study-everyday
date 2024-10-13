@@ -156,7 +156,10 @@ function homeSideBar() {
 
 function specialTopic() {
   return [
-    { text: "ChatGPT & AI", link: "/special-topic/gpt/index" },
+    {
+      text: "专题首页",
+      link: "/special-topic/topic-index",
+    },
     {
       text: "项目模板",
       items: [
@@ -165,15 +168,47 @@ function specialTopic() {
           link: "/special-topic/projects/index",
         },
         {
-          text: "Vue-H5 模板",
-          link: "/special-topic/projects/vue-h5",
+          text: "H5 模板",
+          link: "/special-topic/projects/template-h5",
+        },
+        {
+          text: "admin 模板",
+          link: "/special-topic/projects/template-admin",
         },
       ],
     },
-    { text: "好用的工具", link: "/special-topic/tools/index" },
-    { text: "Web3相关", link: "/special-topic/web3/index" },
-    { text: "区块链相关", link: "/special-topic/block-chain/index" },
-    { text: "问题专栏", link: "/special-topic/questions/index" },
+    {
+      text: '前端相关',
+      items: [
+        { text: "微前端", link: "/special-topic/micro-fe" },
+        { text: "Nest.js", link: "/special-topic/nest-js" },
+        { text: "低代码", link: "/special-topic/lowcode" },
+        { text: "前端工程化", link: "/special-topic/fe-project" },
+        { text: "前端提效工具", link: "/special-topic/fe-efficiency-tool" },
+      ]
+    },
+
+    {
+      text: '技术前沿',
+      items: [
+        { text: "ChatGPT & AI", link: "/special-topic/gpt/index" },
+        { text: "Web3相关", link: "/special-topic/web3/index" },
+        { text: "区块链相关", link: "/special-topic/block-chain/index" },
+      ]
+    },
+    {
+      text: '求职&面试&公司收录',
+      items: [
+        { text: "公司收录", link: "/special-topic/companies" },
+      ]
+    },
+    {
+      text: '其他',
+      items: [
+        { text: "好用的工具", link: "/special-topic/tools/index" },
+        { text: "问题专栏", link: "/special-topic/questions/index" },
+      ]
+    }
   ];
 }
 
