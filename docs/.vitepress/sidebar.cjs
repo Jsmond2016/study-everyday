@@ -3,11 +3,55 @@ module.exports = [
     text: "10月",
     items: [
       {
-        text: "1011",
+        text: "1011-todo",
         link: "/record-2024/10/1011",
       },
     ],
   },
+  {
+    text: "9月",
+    items: [
+      {
+        text: "0922",
+        link: "/record-2024/09/0922",
+      },
+      {
+        text: "0915",
+        link: "/record-2024/09/0915",
+      },
+      {
+        text: "0910",
+        link: "/record-2024/09/0910",
+      },
+      {
+        text: "0908",
+        link: "/record-2024/09/0908",
+      },
+    ],
+  },
+  {
+    text: "8月",
+    items: [
+      {
+        text: "0824-todo",
+        link: "/record-2024/08/0824",
+      },
+      {
+        text: "0817-todo",
+        link: "/record-2024/08/0817",
+      },
+      {
+        text: "0810-todo",
+        link: "/record-2024/08/0810",
+      },
+      {
+        text: "0803",
+        link: "/record-2024/08/0803",
+      },
+    ],
+  },
+  
+ 
   {
     text: "7月",
     items: [
