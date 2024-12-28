@@ -1,7 +1,36 @@
 module.exports = [
   {
+    "text": "12月",
+    "items": [
+      {
+        "text": "1228",
+        "link": "/record-2024/12/1228"
+      },
+      {
+        "text": "1221-todo",
+        "link": "/record-2024/12/1221"
+      },
+      {
+        "text": "1214-todo",
+        "link": "/record-2024/12/1214"
+      },
+      {
+        "text": "1207-todo",
+        "link": "/record-2024/12/1207"
+      }
+    ]
+  },
+  {
     "text": "11月",
     "items": [
+      {
+        "text": "1123-todo",
+        "link": "/record-2024/11/1123"
+      },
+      {
+        "text": "1116-todo",
+        "link": "/record-2024/11/1116"
+      },
       {
         "text": "1105-todo",
         "link": "/record-2024/11/1105"
@@ -53,18 +82,18 @@ module.exports = [
   {
     "text": "8月",
     "items": [
-      {
-        "text": "0824-todo",
-        "link": "/record-2024/08/0824"
-      },
-      {
-        "text": "0817-todo",
-        "link": "/record-2024/08/0817"
-      },
-      {
-        "text": "0810-todo",
-        "link": "/record-2024/08/0810"
-      },
+      // {
+      //   "text": "0824-todo",
+      //   "link": "/record-2024/08/0824"
+      // },
+      // {
+      //   "text": "0817-todo",
+      //   "link": "/record-2024/08/0817"
+      // },
+      // {
+      //   "text": "0810-todo",
+      //   "link": "/record-2024/08/0810"
+      // },
       {
         "text": "0803",
         "link": "/record-2024/08/0803"
