@@ -20,9 +20,9 @@ jobs:
       - name: install and build
         run: |
           corepack enable
-          yarn set version stable
-          yarn install
-          yarn build
+          corepack prepare pnpm@latest --activate
+          pnpm install
+          pnpm build
       - name: 部署到 github-page...
         uses: JamesIves/github-pages-deploy-action@v4
         with:
