@@ -54,12 +54,17 @@ function nav() {
     { text: "首页", link: "/home/index", activeMatch: "/home/" },
     {
       text: "每日笔记",
-      link: "/record-2024/index",
-      activeMatch: "/record-2024/",
+      link: "/record-2025/index",
+      activeMatch: "/record-2025/",
     },
     {
       text: "历史笔记存档",
       items: [
+        {
+          text: "2024年",
+          link: "/record-2024/index",
+          activeMatch: "/record-2024/",
+        },
         {
           text: "2023年",
           link: "/record-2023/index",
@@ -143,8 +148,8 @@ function articleSidebar() {
 function noteSideBar() {
   return [
     // { text: "恢复更新", link: "/record-2023/resume-updates" },
-    { text: "笔记首页", link: "/record-2024/index" },
-    { text: 'TODOS', link: "/record-2024/todos"},
+    { text: "笔记首页", link: "/record-2025/index" },
+    // { text: 'TODOS', link: "/record-2024/todos"},
     ...sidebar,
   ];
 }
