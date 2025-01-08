@@ -7,11 +7,11 @@ module.exports = [
         "link": "/record-2024/12/1228"
       },
       {
-        "text": "1221-todo",
+        "text": "1221",
         "link": "/record-2024/12/1221"
       },
       {
-        "text": "1214-todo",
+        "text": "1214",
         "link": "/record-2024/12/1214"
       },
       {
