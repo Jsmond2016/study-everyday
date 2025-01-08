@@ -4,6 +4,7 @@ import taskLists from "markdown-it-task-lists";
 import sidebar2021 from "./sidebar.archive-2021";
 import sidebar2022 from "./sidebar.archive-2022";
 import sidebar2023 from "./sidebar.archive-2023";
+import sidebar2024 from "./sidebar.archive-2024";
 import sidebar from "./sidebar.cjs";
 
 // https://vitepress.dev/reference/site-config
@@ -19,11 +20,12 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: nav(),
     sidebar: {
-      "/record-2024/": noteSideBar(),
+      "/record-2025/": noteSideBar(),
       // "/basic/": homeSideBar(),
       "/record-2021/": sidebar2021,
       "/record-2022/": sidebar2022,
       "/record-2023/": sidebar2023,
+      "/record-2024/": sidebar2024,
       "/read-notes/": articleSidebar(),
       "/special-topic/": specialTopic(),
       // "/fe-nav/": feNavSidebar(),
