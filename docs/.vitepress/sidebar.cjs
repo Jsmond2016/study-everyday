@@ -15,7 +15,7 @@ module.exports = [
         "link": "/record-2024/12/1214"
       },
       {
-        "text": "1207-todo",
+        "text": "1207",
         "link": "/record-2024/12/1207"
       }
     ]
@@ -41,7 +41,7 @@ module.exports = [
     "text": "10月",
     "items": [
       {
-        "text": "1026-todo",
+        "text": "1026",
         "link": "/record-2024/10/1026"
       },
       {
