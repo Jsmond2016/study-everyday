@@ -28,11 +28,11 @@ module.exports = [
         "link": "/record-2024/11/1123"
       },
       {
-        "text": "1116-todo",
+        "text": "1116",
         "link": "/record-2024/11/1116"
       },
       {
-        "text": "1105-todo",
+        "text": "1105",
         "link": "/record-2024/11/1105"
       }
     ]
