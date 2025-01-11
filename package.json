@@ -1,9 +1,11 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0",
   "devDependencies": {
     "axios": "^1.6.8",
     "cheerio": "^1.0.0-rc.12",
     "consola": "^3.2.3",
+    "release-it": "^18.1.1",
+    "release-it-pnpm": "^4.6.4",
     "vitepress": "^1.1.4"
   },
   "type": "module",
@@ -11,7 +13,8 @@
     "new": "node ./utils/create.cjs",
     "dev": "vitepress dev docs --port 5001",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "preview": "vitepress preview docs",
+    "release": "release-it"
   },
   "dependencies": {
     "gitalk": "^1.8.0",
