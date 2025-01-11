@@ -1,23 +1,57 @@
-个人每日学习记录：
+# Study-Everyday
 
-## 创建总结
+> 个人每日学习记录：
+
+Study-Everyday 是一个用于记录个人学习的笔记本，始于 2021 年 5 月 至今；
+
+
+## 创建日报和周报
 
 ```bash
 
 # 创建日总结模板
 # 爬虫自动抓取 bing 壁纸作为今天的主图
 
-yarn new 
-
-# or
-
-yarn new week # 创建周总结模板
+pn run new day
 
 # or 生成指定日期的 日-周 模板
 
-yarn new day 0901
+pn run day 0901
 
-yarn new week 0902
+# or 创建周总结模板
+
+pn run week
+
+pn run week 0902
+```
+
+## 部分快捷命令参考
+
+
+[Markdown Extensions | VitePress](https://vitepress.dev/guide/markdown#custom-containers)
+
+```sh
+::: info
+This is an info box.
+:::
+
+::: tip
+This is a tip.
+:::
+
+::: warning
+This is a warning.
+:::
+
+::: danger
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
+
+
 ```
 
 ## 调试
@@ -47,12 +81,13 @@ yarn new week 0902
 ## TODOS
 
 - 创建年、月目标模板
-  - `yarn new year`
-  - `yarn new month`
+
+```sh
+pn run new month
+
+pn run new year
+```
 
 
-## Vitepress
 
-常用工具
-
-- https://vitepress.dev/guide/markdown#custom-containers
+ 
