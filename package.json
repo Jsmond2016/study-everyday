@@ -15,7 +15,8 @@
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
     "release": "release-it",
-    "version": "npm version patch -m \"chore(release): %s\""
+    "setVersion": "npm version patch -m \"chore(release): v%s\"",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "gitalk": "^1.8.0",
