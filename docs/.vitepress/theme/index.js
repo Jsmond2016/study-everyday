@@ -1,12 +1,12 @@
 // .vitepress/theme/index.js
 
 import DefaultTheme from "vitepress/theme"
-import mediumZoom from "medium-zoom"
-import { useRoute } from "vitepress"
-import { onMounted, watch, nextTick } from "vue"
+// import mediumZoom from "medium-zoom"
+// import { onMounted, watch, nextTick } from "vue"
 import MyLayout from './MyLayout.vue'
-import NavItemVue from './nav-item/NavItem.vue';
-
+import imageViewer from 'vitepress-plugin-image-viewer';
+import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
+import { useRoute } from 'vitepress';
 import "./index.css"
 
 
@@ -17,23 +17,12 @@ export default {
   // https://github.com/vuejs/vitepress/issues/854
   enhanceApp(ctx) {
     // register your custom global components
-    ctx.app.component('NavItem', NavItemVue)
+    ctx.app.component('vImageViewer', vImageViewer);
   },
   setup() {
-
-
-
-    const route = useRoute()
-    const initZoom = () => {
-      new mediumZoom("img", { background: "var(--vp-c-bg)" })
-    }
-    onMounted(() => {
-      initZoom()
-    })
-
-    watch(
-      () => route.path,
-      () => nextTick(() => initZoom())
-    )
+   // Get route
+   const route = useRoute();
+   // Using
+   imageViewer(route);
   },
 }
