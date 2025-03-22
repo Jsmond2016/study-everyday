@@ -187,6 +187,7 @@ function specialTopic() {
     {
       text: '前端相关',
       items: [
+        { text: "首页", link: "/special-topic/fe-index" },
         { text: "微前端", link: "/special-topic/micro-fe" },
         { text: "Nest.js", link: "/special-topic/nest-js" },
         { text: "低代码", link: "/special-topic/lowcode" },
