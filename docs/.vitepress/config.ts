@@ -179,7 +179,7 @@ function specialTopic() {
           link: "/special-topic/projects/template-h5",
         },
         {
-          text: "admin 模板",
+          text: "Admin 模板",
           link: "/special-topic/projects/template-admin",
         },
       ],
