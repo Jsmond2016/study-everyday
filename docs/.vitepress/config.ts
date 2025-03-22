@@ -17,6 +17,7 @@ export default defineConfig({
   base: "/study-everyday/",
   description: "My Study Notes for everyday",
   themeConfig: {
+    logo: "/logo.png",
     // https://vitepress.dev/reference/default-theme-config
     nav: nav(),
     sidebar: {
