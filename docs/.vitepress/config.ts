@@ -84,11 +84,6 @@ function nav() {
       ],
     },
     {
-      text: "随笔文章",
-      link: "/read-notes/windows-terminal",
-      activeMatch: "/read-notes|interview/",
-    },
-    {
       text: "专题整理",
       link: "/special-topic/projects/index",
       activeMatch: "/special-topic/",
