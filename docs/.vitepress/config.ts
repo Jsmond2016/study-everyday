@@ -22,12 +22,11 @@ export default defineConfig({
     nav: nav(),
     sidebar: {
       "/record-2025/": noteSideBar(),
-      // "/basic/": homeSideBar(),
       "/record-2021/": sidebar2021,
       "/record-2022/": sidebar2022,
       "/record-2023/": sidebar2023,
       "/record-2024/": sidebar2024,
-      "/read-notes/": articleSidebar(),
+      // "/read-notes/": articleSidebar(),
       "/special-topic/": specialTopic(),
       // "/fe-nav/": feNavSidebar(),
     },
@@ -101,46 +100,7 @@ function nav() {
   ];
 }
 
-function articleSidebar() {
-  return [
-    {
-      text: "随笔",
-      items: [
-        {
-          text: "PowerShell 命令行 和 git 代理配置-windows 篇",
-          link: "/read-notes/terminal-git-proxy",
-        },
-        {
-          text: "windows-terminal-美化教程",
-          link: "/read-notes/windows-terminal",
-        },
-        {
-          text: "js toFixed 四舍五入问题",
-          link: "/read-notes/js-to-fixed",
-        },
-        { text: "如何高效学习", link: "/read-notes/book-1" },
-        { text: "如何做前端技术设计", link: "/read-notes/book-2" },
-        { text: "Docker教程", link: "/read-notes/docker-note" },
-      ],
-    },
-    {
-      text: "面试",
-      items: [
-        { text: "面经整理-爪哇教育", link: "/read-notes/zhuawa-0404" },
-        { text: "面试冲刺", link: "/read-notes/fe-interview" },
-        { text: "手写js", link: "/read-notes/hand-js" },
-      ],
-    },
-    {
-      text: "leetcode",
-      items: [
-        { text: "leetcode难度分类", link: "/read-notes/leetcode-retag" },
-        { text: "leetcode目录", link: "/read-notes/leetcode-category" },
-      ],
-    },
-  ];
-}
-
+ 
 function noteSideBar() {
   return [
     // { text: "恢复更新", link: "/record-2023/resume-updates" },
