@@ -41,7 +41,8 @@ async function start() {
     fileMonthDirPath
   } = getTplInfo(mode, dateStr)
   await writeRoute({ month, routeItem, fileMonthDirPath, tipMsg: modeToRouteMessage[mode] })
-  const bgImgPath = await getBingImg();
+  // const bgImgPath = await getBingImg();
+  const bgImgPath = '';
   const template = await readFileContent(mode, bgImgPath, dateTime)
   await createTodayFile({ name: fileName, data: template, filePath, fileMonthDirPath, tipMsg: modeToTplMessage[mode] })
 }

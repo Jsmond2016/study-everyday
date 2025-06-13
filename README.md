@@ -16,13 +16,13 @@ pn run new day
 
 # or 生成指定日期的 日-周 模板
 
-pn run day 0901
+pn run new day 0901
 
 # or 创建周总结模板
 
-pn run week
+pn run new week
 
-pn run week 0902
+pn run new week 0902
 ```
 
 ## 部分快捷命令参考

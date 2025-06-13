@@ -1,5 +1,18 @@
 module.exports = [
   {
+    "text": "4月",
+    "items": [
+      {
+        "text": "0412",
+        "link": "/record-2025/04/0412"
+      },
+      {
+        "text": "0405",
+        "link": "/record-2025/04/0405"
+      }
+    ]
+  },
+  {
     "text": "3月",
     "items": [
       {
